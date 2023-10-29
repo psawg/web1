@@ -1,4 +1,13 @@
-/* UTIL */
+/***************
+**
+**  UTILITIES 
+**
+***************/
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* BACKBONE */
 * {
     box-sizing: border-box;
 }
@@ -7,32 +16,79 @@ html {
     min-height: 100%;
 }
 
+
+
+/* Remove Link Color */
 a {
+    padding: 1em 2em;
+    display: inline-block;
     text-decoration: none;
-    color: #f9faf8;
+    color: #eff7fb;
 }
 
-body {
-    font-family: sans-serif;
-    margin: 0;
-}
-
+/* Remove Scrollbar */
 ::-webkit-scrollbar {
     display: none;
 }
 
-/* HEADER */
+
+
+/***************
+**
+**  Primary Button 
+**
+***************/
+.primary-button {
+    background-color: #287695;
+    border-radius: 6px;
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+}
+
+.primary-button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 0 10px 80px -10px #287695;
+}
+
+/***************
+**
+**  Logo Animations 
+**
+***************/
+.Navbar img {
+    
+}
+
+/***************
+**
+**  BODY
+**
+***************/
+body {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+}
+
+
+/***************
+**
+**  HEADER
+**
+***************/
 header {
-    background-color: #1f2937;
-    color: #f9faf8;
-    /* margin: 0px;
-    padding: 0; */
+    background-color: #eff7fb;
+    color: #000000;
+    height: 100vh;
+    width: 100vw;
 }
 
+/* Header Container */
 .HeaderContainer {
-    margin: 0px 10%;
+    display: block;
 }
-
+    /* NavBar */
     .Navbar{
         display: flex;
         flex-wrap: wrap;
@@ -41,285 +97,39 @@ header {
     }
         
         .Navbar img {
-            display: flex;
-            width: 150px;
+            /* display: flex; */
+            width: 100px;
             flex-grow: 1;
+            border-radius: 6px;
+            color: #287695;
         }
 
         .Navbar ul {
             list-style-type: none;
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex: 0 0 300px;
-            gap: 32px;
+            justify-content: space-between;
+            flex: 0 1 500px;
             padding: 0;
+            /* gap: 32px; */
             /* margin-left: auto; */
         }
 
-    .Hero {
+    
+    /* Header Content */
+    .HeaderContent {
         display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 32px;
-        padding: 0 0 24px 0;
-    }
-
-        .content {
-            max-width: 500px;
-            padding: 0 32px;
-            /* margin-right: auto; */
-        }
-            .content h1 {
-                font-size: 48px;
-                font-weight: bolder;
-            }
-
-            .content p {
-                font-size: 18px;
-            }
-
-            .content button {
-                background-color: #3882f6;
-                padding: 8px 24px;
-                border: none;
-                border-radius: 10px;
-                color: #f9faf8;
-                font-weight: 900;
-                font-size: 16px;
-                cursor: pointer;
-            }
-
-            .content button:hover{
-                background-color: #002a6e;
-                transition: 1s;
-                animation: left 2s infinite;
-            }
-
-
-            @keyframes left {
-                0% {
-                    transform: translateX(0);
-                }
-                
-                50% {
-                    transform: translateY(-10px) translateX(-10px);
-                }
-
-                100% {
-                    transform: translateX(0);
-                }
-            }
-
-            .content button:active {
-                background-color: #3882f6;
-            }
-        
-        .avatar {
-            /* width: fit-content; */
-            /* block-size: fit-content; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            padding: 0 32px;
-            margin: 0;
-        }
-
-            .avatar img {
-                border-radius: 15px;
-                width: 250px;
-            }
-
-            .avatar p {
-                font-size: 12px;
-                color: #a7a7a7;
-            }
-        
-
-
-/* MAIN */
-main {
-    /* padding-bottom: 24px; */
-    margin: 0;
-}
-    .background-image-card {
-        background-image: url(./img/Headin_Home.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    }
-
-    .title {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 32px;
-        margin-top: 0;
-    }
-
-        .title h1 {
-            font-size: 36px;
-            font-weight: bold;
-            color: #f9faf8;
-            background-color: rgba(56, 130, 246, 70%);
-            padding: 32px;
-            border-radius: 24px;
-        }
-
-    .CardContainer {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 56px 16px;
-    }
-
-    .CardContainer .left {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex: 0 1 500px;
-    }
-
-    .CardContainer .right {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex: 0 1 500px;
     }
     
-
-        .CardContainer .info{
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            text-align: center;
-            flex-wrap: wrap;
-            row-gap: 16px;
-            padding-bottom: 24px;
-            width: 175px;
-        }
-            .CardContainer .frame {
-                width: 175px;
-                height: 175px;
-                display: flex;
-                justify-items: center;
-                align-items: center;
-                border-radius: 5px;
-                /* border: 3px solid #3882f6; */
-            }
-
-                .frame img {
-                    width: 175px;
-                    height: 175px;
-                    /* border: 3px solid #1f2937; */
-                    border-radius: 5px;
-                }
-            
-            .CardContainer .text {
-                border-radius: 5px;
-                font-weight: bold;
-                padding: 8px;
-                color: #1f2937;
-                background-color: rgba(167, 167, 167, 70%);
-            }
-    
-    .QuoteContainer {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #E5E7EB;
-        padding: 92px 10%;
-    }
-        .QuoteContainer a {
-            color: #1f2937;
-            cursor: pointer;
+        /* Title */
+        .title {
+            font-size: 128px;
+            font-weight: 1000;
         }
 
-        .quote-line {
-            color: #1f2937;
-            font-size: 36px;
-            padding-bottom: 0px;
-            /* margin-right: auto; */
-        }
-
-        .writer-line {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            color: #1f2937;
-            font-size: 24px;
-            font-weight: bold;
-            margin-left: auto;
-            /* margin-top: 16px; */
-        }
-    
-.background-image-contactme {
-    background-image: url(./img/Stair_Fellas.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-    
-    .ContactMe {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 254px 32px;
-    }
-
-        .ContactMe .background-text {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            flex: 0 1 1000px;
-            gap: 32px;
-            background-color: rgba(56, 130, 246, 60%);
-            border-radius: 10px;
-            padding: 56px;
+        /* sub-title */
+        .sub-title {
 
         }
 
-            .ContactMe .info {
-                color: #E5E7EB;
-                flex: 0 1 500px;
-                
-            }
-
-            .ContactMe button {
-                font-size: 24px;
-                font-weight: 900;
-                color: white;
-                border: white solid 5px;
-                background-color: transparent;
-                padding: 16px 32px;
-                border-radius: 8px;
-            }
-
-            .ContactMe button:hover {
-                color: #1f2937;
-                border: white solid 5px;
-                background-color: white;
-                padding: 16px 32px;
-                border-radius: 8px;
-            }
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f9faf8;
-    background-color: #1f2937;
-    padding: 16px 48px;
-}
-
-    .footer p {
-
-    }
+  
