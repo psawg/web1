@@ -1,5 +1,8 @@
 .TopMenu{
     width: 100%;
-    height: 1000px;
+    height: 100px;
     background-color: blue;
+}
+body{
+    overflow: hidden;
 }
