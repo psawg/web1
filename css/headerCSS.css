@@ -1,8 +1,65 @@
-.TopMenu{
-    width: 100%;
-    height: 100px;
-    background-color: blue;
-}
+/* UTILITY */
 body{
     overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* NAVIGATION BAR */
+.NavBar{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: sandybrown;
+}
+
+    /* UPPER NAV */
+    .upper-nav {
+        height: 2em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: lightblue;
+        padding: 0em 4em;
+    }
+
+        /* LIST ITEM */
+        .upper-nav ul {
+            display: flex;
+            gap: 16px;
+        }
+
+    /* UNDER NAV */
+    .under-nav {
+        height: 2.5em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0em 4em;
+    }
+        /* RIGHT CONTAINER */
+        .NavBar .right-container {
+            /* margin-left: auto; */
+        }
+
+            /* LIST ITEM */
+            .NavBar .right-container ul {
+                display: flex;
+                gap: 16px;
+
+            }
