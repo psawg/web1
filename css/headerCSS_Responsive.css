@@ -1,15 +1,10 @@
 /* NAVBAR RIGHT-LEFT CONTAINER */
 /* Tablet User */
 @media only screen and (max-width: 768px) {
-    /* NAVBAR RIGHT */
-    .NavBar .right-container {
+    /* NAVBAR */
+    .NavBar .container {
         justify-content: center;
         align-items: center;
-        /* display: none; */
-    }
-
-    /* NAVBAR LEFT */
-    .NavBar .left-container img {
         /* display: none; */
     }
     
@@ -23,8 +18,6 @@
         background-color: orange;
     }
 
-
-
     /* UPPER NAV */
     .upper-nav {
         justify-content: center;
@@ -33,9 +26,8 @@
 }
 
 @media only screen and (max-width: 900px) {
-    /* RIGHT CONTAINER LIST ITEM */
-
-    .NavBar .right-container ul a {
+    /* UNDER NAV */
+    .NavBar .upper-nav ul a {
         display: flex;
         gap: 4px;
         align-items: center;
