@@ -1,46 +1,18 @@
-/* 
-=================
-    LAYOUT GRID
-=================
-*/
-.container {  display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-    grid-template-rows: 0.3fr 2fr 0.7fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Navigation-Bar Navigation-Bar Navigation-Bar"
-      "List-Content Main-Content Side-Bar"
-      "Footer Footer Footer";
-  }
-  
-  .Navigation-Bar { grid-area: Navigation-Bar; }
-  
-  .Main-Content { grid-area: Main-Content; }
-  
-  .Footer { grid-area: Footer; }
-  
-  .List-Content { grid-area: List-Content; }
-  
-  .Side-Bar { grid-area: Side-Bar; }
-
-/*
-=================
-    UTILITY
-=================
-*/
+/* UTILITY */
 * {
     box-sizing: content-box;
 }
 
 html {
-    /* width: auto; */
+    width: auto;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
 
+
 body{
-    /* overflow: hidden;  */
+    overflow: hidden;
     padding: 0;
     margin: 0;
 }
@@ -55,17 +27,7 @@ a {
     text-decoration: none;
     color: black;
 }
-
-::-webkit-scrollbar {
-    /* Turn of the scrollbar */
-    display: none;
-}
-
-/*
-==================================
-NAVIGATION BAR - FULL SCREEN
-==================================
-*/
+/* NAVIGATION BAR */
 .NavBar{
     display: block;
     width: 100%;
@@ -158,45 +120,3 @@ NAVIGATION BAR - FULL SCREEN
                 border-radius: 6px;
                 color: orange;
             }
-
-/*
-==================================
-NAVIGATION BAR - TABLET
-==================================
-*/
-@media only screen and (max-width: 768px) {
-    /* NAVBAR */
-    .NavBar .container {
-        justify-content: center;
-        align-items: center;
-        /* display: none; */
-    }
-    
-    /* UNDER NAV */
-    .under-nav {
-        padding: 0;
-        overflow: hidden;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: orange;
-    }
-
-    /* UPPER NAV */
-    .upper-nav {
-        justify-content: center;
-        padding: 1.5em 4vw;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    /* UNDER NAV */
-    .NavBar .upper-nav ul a {
-        display: flex;
-        gap: 4px;
-        align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        padding: 0.5em;
-    }
-}
