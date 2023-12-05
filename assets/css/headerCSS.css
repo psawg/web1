@@ -1,0 +1,122 @@
+/* UTILITY */
+* {
+    box-sizing: content-box;
+}
+
+html {
+    width: auto;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* NAVIGATION BAR */
+.NavBar{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: sandybrown;
+}
+
+    /* UPPER NAV */
+    .upper-nav {
+        height: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #37312f;
+        padding: 1.5em 20vw;
+        gap: 8px;
+    }
+
+
+        /* LIST ITEM */
+        .upper-nav ul {
+            display: flex;
+            gap: 16px;
+        }
+
+        .upper-nav ul a {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 1em;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        /* LIST ITEM HOVER */
+        .upper-nav ul a:hover {
+            background-color: orange;
+            color: black;
+            border-radius: 6px;
+            transition: 0.2s ease;
+            
+        }
+
+        
+
+
+    /* UNDER NAV */
+    .under-nav {
+        height: 4em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 10vw;
+        /* gap: 2em; */
+        /* padding-right: 40vw; */
+    }
+
+
+        /* CONTAINER */
+        .NavBar .under-nav {
+            /* margin-left: auto; */
+            display: flex;
+            justify-content: center;
+            flex: 1 0 350px;
+        }
+
+            /* LIST ITEM */
+            .NavBar .under-nav ul {
+                display: flex;
+                gap: 24px;
+                align-items: center;
+
+            }
+
+            .NavBar .under-nav ul a {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                padding: 1em;
+            }
+
+            /* LIST ITEM HOVER */
+            .NavBar .under-nav ul a:hover {
+                transition: 0.2s ease;
+                background-color: white;
+                border-radius: 6px;
+                color: orange;
+            }
