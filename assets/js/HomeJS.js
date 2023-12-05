@@ -10,8 +10,8 @@ function loadHTMLComponent(url, id){
     .catch(error =>console.error(error))
 }
 
-loadHTMLComponent('/AllOfGames/components/Footer.html', 'footer');
-loadHTMLComponent('/AllOfGames/components/Header.html', 'header');
-loadHTMLComponent('/AllOfGames/components/Section.html', 'section');
-loadHTMLComponent('/AllOfGames/components/intro.html', 'intro');
+loadHTMLComponent('/components/Footer.html', 'footer');
+loadHTMLComponent('/components/Header.html', 'header');
+loadHTMLComponent('/components/Section.html', 'section');
+// loadHTMLComponent('/components/intro.html', 'intro');
 

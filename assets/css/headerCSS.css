@@ -46,6 +46,12 @@ a {
         gap: 8px;
     }
 
+    .upper-nav img {
+        width: 65px;
+        height: 65px;
+        border-radius: 6px;
+    }
+
 
         /* LIST ITEM */
         .upper-nav ul {
@@ -70,7 +76,6 @@ a {
             color: black;
             border-radius: 6px;
             transition: 0.2s ease;
-            
         }
 
         
