@@ -1,11 +1,20 @@
-/* NAVBAR RIGHT-LEFT CONTAINER */
-/* Tablet User */
+/* 
+==========================================
+    TABLET USER
+==========================================
+*/
 @media only screen and (max-width: 768px) {
     /* NAVBAR */
     .NavBar .container {
         justify-content: center;
         align-items: center;
         /* display: none; */
+    }
+
+    /* UPPER NAV */
+    .upper-nav {
+        justify-content: space-between;
+        padding: 1.5em 4vw;
     }
     
     /* UNDER NAV */
@@ -18,14 +27,9 @@
         background-color: orange;
     }
 
-    /* UPPER NAV */
-    .upper-nav {
-        justify-content: center;
-        padding: 1.5em 4vw;
-    }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
     /* UNDER NAV */
     .NavBar .upper-nav ul a {
         display: flex;
