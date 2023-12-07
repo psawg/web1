@@ -1,15 +1,13 @@
 .content{
-    width: 100%;
-    height: 861px;
+    width: auto;
 }
 .topContent{
-    width: 100%;
-    height: 861px;
+    display: flex;
+    align-content: center;
 }
 
 
 #backgroundVideo{
-    width: 100%;
-    height: 1080;
+    width: 100vw;
     opacity: 1;
 }
