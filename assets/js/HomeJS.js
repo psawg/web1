@@ -13,5 +13,12 @@ function loadHTMLComponent(url, id){
 loadHTMLComponent('/components/Footer.html', 'footer');
 loadHTMLComponent('/components/Header.html', 'header');
 loadHTMLComponent('/components/Section.html', 'section');
-// loadHTMLComponent('/components/intro.html', 'intro');
+
+
+window.addEventListener("load", function() {
+    var intro = document.getElementById("intro");
+    intro.style.display = "none";
+  });
+
+
 
