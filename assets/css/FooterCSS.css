@@ -37,10 +37,17 @@
 
 
 
-/* LIST ITEM CONTENT */
-#footerContent div p:hover{
-    color: rgb(0, 208, 255);
-    transition: 0.2s ease;
+#content1 #about:hover{
+    color: rgb(246, 205, 183);
+}
+#content1 #privacy:hover{
+    color: rgb(246, 205, 183);
+}
+#content1 #contact:hover{
+    color: rgb(246, 205, 183);
+}
+#content1 #faq:hover{
+    color: rgb(246, 205, 183);
 }
 
 #footerContent {
@@ -97,7 +104,7 @@
 
 
 #content4 li img:hover{
-    background-color: aqua;
+    background-color: rgb(246, 205, 183);
 }
 
 #content5{
@@ -128,7 +135,7 @@
 }
 
 #content5 li img:hover{
-    background-color: aqua;
+    background-color:  rgb(246, 205, 183);
 }
 
 /* COPYRIGHT FOOTER */
