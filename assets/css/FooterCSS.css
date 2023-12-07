@@ -35,8 +35,17 @@
 
 
 
-#footerContent ul li:hover{
-    color: rgb(0, 208, 255);
+#content1 #about:hover{
+    color: rgb(246, 205, 183);
+}
+#content1 #privacy:hover{
+    color: rgb(246, 205, 183);
+}
+#content1 #contact:hover{
+    color: rgb(246, 205, 183);
+}
+#content1 #faq:hover{
+    color: rgb(246, 205, 183);
 }
 
 #footerContent {
