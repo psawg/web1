@@ -38,7 +38,7 @@
 
 
 #footerContent ul li:hover{
-    color: rgb(0, 208, 255);
+    color:  rgb(246, 205, 183);
 }
 
 .content1{
@@ -108,7 +108,7 @@ h2{
 
 
 #content4 li img:hover{
-    background-color: aqua;
+    background-color: rgb(246, 205, 183);
 }
 
 #content5{
@@ -134,7 +134,7 @@ h2{
 }
 
 #content5 li img:hover{
-    background-color: aqua;
+    background-color:  rgb(246, 205, 183);
 }
 
 

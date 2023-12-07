@@ -12,7 +12,7 @@
   
   /* Tùy chỉnh màu sắc và hình dạng của thumb */
   body::-webkit-scrollbar-thumb {
-    background-color: #f46f16;
+    background-color: #ff8b4b;
     border-radius: 5px;
   }
   
