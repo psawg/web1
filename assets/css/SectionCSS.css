@@ -4,24 +4,25 @@
 }
 
 .content{
-    width: auto;
+    width: 100%;
 }
 
 /* TOP CONTAINER */
 .topContent{
     display: flex;
+    justify-content: center;
     align-content: center;
     position: relative;
 }
 
 
 #backgroundVideo{
-    width: 100vw;
+    width: 100%;
     opacity: 1;
 }
 
 .overlay {
-    box-sizing: border-box;
+    box-sizing: content-box;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +58,7 @@
     color: white;
     font-size: 40px;
     margin: 0;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
 /* MID CONTAINER */

@@ -42,12 +42,10 @@ NAVIGATION BAR
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 4em;
+    height: 3em;
     gap: 16px;
     padding: 1.5em 5vw;
     background-color: rgb(255, 139, 75);
-    position: sticky;
-    top: 0;
     
 }
 
