@@ -62,7 +62,7 @@
 }
 
 #footerContent div p{
-    font-family: 'Franklin Gothic',Tahoma, sans-serif;
+    font-family:Verdana, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: bold;
     /* text-align: center; */
@@ -75,7 +75,7 @@
 }
 
 #tag{
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: bold;
     padding: 0.5em;
@@ -148,7 +148,7 @@
 }
 
 .copyrightFooter h6{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: large;
     margin: 0;
     padding: 1em 0;
@@ -160,4 +160,4 @@
     text-align: center;
 }
 
-
+/* Dùng font Verdana, Tahoma, sans-serif nha */

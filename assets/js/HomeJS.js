@@ -15,10 +15,4 @@ loadHTMLComponent('/components/Header.html', 'header');
 loadHTMLComponent('/components/Section.html', 'section');
 
 
-window.addEventListener("load", function() {
-    var intro = document.getElementById("intro");
-    intro.style.display = "none";
-  });
-
-
 
