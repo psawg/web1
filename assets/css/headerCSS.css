@@ -68,6 +68,7 @@ LOGO CONTAINER
     height: 85px;
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.1s ease;
 }
 
 /* 
@@ -81,6 +82,7 @@ LIST ITEM
 }
 
 .NavBar ul a {
+    transition: 0.1s ease;
     display: flex;
     gap: 6px;
     align-items: center;
@@ -88,7 +90,7 @@ LIST ITEM
     color: black;
     padding: 1em;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 1.5em;
 }
 
 /* 

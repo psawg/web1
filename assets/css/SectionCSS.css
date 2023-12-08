@@ -22,7 +22,8 @@
 }
 
 .overlay {
-    box-sizing: content-box;
+    box-sizing: border-box;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
