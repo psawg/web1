@@ -11,7 +11,6 @@ UTILITY
 
 html {
     width: auto;
-    height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -33,21 +32,27 @@ a {
     text-decoration: none;
     color: black;
 }
-/* 
+/*
 ==========================================
 NAVIGATION BAR
 ==========================================
 */
 .NavBar {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: flex-start;
     align-items: center;
     height: 3em;
+    width: auto;
     gap: 16px;
     padding: 1.5em 5vw;
     background-color: rgb(255, 139, 75);
     
 }
+
+/* TODO: STICKY NAVBAR*/
+
 
 /*
 ==========================================

@@ -58,14 +58,14 @@
 }
 
 #footerContent div {
-
+    margin: 1em 0;
 }
 
 #footerContent div p{
     font-family: 'Franklin Gothic',Tahoma, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    text-align: center;
+    /* text-align: center; */
     margin: 1em 0;
 }
 
@@ -78,7 +78,7 @@
     font-family: Arial, sans-serif;
     font-size: 30px;
     font-weight: bold;
-    padding: 0.5em 2em;
+    padding: 0.5em;
     display: flex;
     justify-content: center;
 }
@@ -87,7 +87,7 @@
     display: flex;
     flex-direction: column;
     padding: 1em;
-    gap: 24px;
+    /* gap: 24px; */
 }
 
 #content4{

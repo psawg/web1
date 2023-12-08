@@ -32,11 +32,9 @@
     }
   
     #iconContact {
-      display: inline-block;
+      gap: 8px;
+      display: flex;
+      justify-content: space-evenly;
     }
-  
-    #content4,
-    #content5 {
-      margin-bottom: 10px;
-    }
+
   }
