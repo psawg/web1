@@ -15,7 +15,7 @@
 }
 
 .intro img {
-    width: 400px; /* Độ rộng của hình ảnh logo */
+    width: 250px; /* Độ rộng của hình ảnh logo */
     height: auto; /* Chiều cao sẽ tự điều chỉnh để giữ tỷ lệ khung hình */
 }
 
@@ -26,5 +26,5 @@
 
 .intro.fade-in img {
     transform: scale(0);
-
 }
+
