@@ -1,24 +1,27 @@
 /* UTILITY */
 * {
     box-sizing: content-box;
+    /* Đặt box-sizing cho tất cả các phần tử để tính toán kích thước chính xác */
 }
 
-.content{
+.content {
     width: 100%;
+    /* Đặt chiều rộng của phần tử "content" là 100% */
 }
 
 /* TOP CONTAINER */
-.topContent{
+.topContent {
     display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
+    /* Cấu hình cho phần tử "topContent" ở trên cùng */
 }
 
-
-#backgroundVideo{
+#backgroundVideo {
     width: 100%;
     opacity: 1;
+    /* Đặt chiều rộng và độ mờ của video nền */
 }
 
 .overlay {
@@ -33,50 +36,62 @@
     align-items: start;
     justify-content: flex-start;
     z-index: 1;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%)  /* Màu nền của lớp chữ ghi đè */
-  }
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    /* Tạo lớp chữ ghi đè lên video nền */
+}
 
-  .mainLogo{
+.mainLogo {
     width: 800px;
     height: 350px;
-  }
+    /* Đặt kích thước cho phần tử "mainLogo" */
+}
 
-  .mainLogo img {
+.mainLogo img {
     width: 500px;
     height: 235px;
     margin-top: 100px;
     margin-left: 100px;
+    /* Đặt kích thước và vị trí cho hình ảnh bên trong phần tử "mainLogo" */
 }
 
-.paragraph{
-    width: 800px;   
+.paragraph {
+    width: 800px;
     height: 300px;
     margin-left: 100px;
+    /* Đặt kích thước và vị trí cho phần tử "paragraph" */
 }
-.paragraph p{
+
+.paragraph p {
     width: 800px;
     height: 300px;
     color: white;
     font-size: 40px;
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    /* Đặt kich thước, màu sắc, font chữ và khoảng cách cho các đoạn văn bản bên trong phần tử "paragraph" */
+}
 
 /* MID CONTAINER */
 .midContent {
     height: 75vh;
     background-color: black;
+    /* Đặt chiều cao và màu nền cho phần tử "midContent" */
 }
 
 .midContent .Hero .main1 {
     padding-top: 4em;
     margin-left: 12em;
     color: #ff9f59;
+    /* Cấu hình cho phần tử "main1" bên trong phần tử "Hero" trong "midContent" */
 }
 
 .midContent .Hero .main1 h1 {
     margin: 0;
     font-size: 46px;
     font-weight: 1000;
-    font-family: 'Franklin Gothic',Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
+    /* Đặt kiểu chữ và kích thước cho tiêu đề h1 bên trong phần tử "main1" */
 }
+
+
+
