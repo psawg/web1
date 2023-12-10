@@ -1,32 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var video = document.getElementById('backgroundVideo');
-//     video.play();
-//   });
-
-// // TODO: RANDOM VIDEO ON LOADING PAGE IN THE BACKGROUND
-// // List of video URLs
-// const videoList = [
-//   '/assets/vid/GTA_VI_trailer.mp4',
-//   '/assets/vid/TUNIC_trailer.mp4',
-//   // Add more video URLs here
-// ];
-
-// // Function to select a random video URL
-// function getRandomVideo() {
-//   const randomIndex = Math.floor(Math.random() * videoList.length);
-//   return videoList[randomIndex];
-// }
-
-// // Get video element
-// const backgroundVideo = document.getElementById('backgroundVideo');
-
-// // Set a random video as the source
-// backgroundVideo.querySelector('source').src = getRandomVideo();
-
-// // Reload the video to apply the new source
-// backgroundVideo.load();
-
-
 
   window.addEventListener('DOMContentLoaded', function() {
 
@@ -49,3 +20,39 @@
     },2000);
         
     });
+
+
+
+    window.onload = function() {
+      var newsItems = document.querySelectorAll(".newsItem");
+      var isHovered = false; // Biến để theo dõi trạng thái di chuột
+    
+      newsItems.forEach(function(item) {
+        item.addEventListener("mouseenter", function() {
+          isHovered = true;
+          this.style.transform = "scale(1.1)"; // Scale lên 1.1 khi di chuột vào
+        });
+    
+        item.addEventListener("mouseleave", function() {
+          isHovered = false;
+          this.style.transform = "scale(1)"; // Scale về 1 khi di chuột ra
+        });
+      });
+    
+      var newsList = document.querySelector(".newsList");
+    
+      setInterval(function() {
+        if (!isHovered) {
+          var firstItem = newsList.querySelector(".newsItem:first-child");
+    
+          // Di chuyển tin tức đầu tiên đến cuối danh sách
+          firstItem.style.transform = "translateX(-100%)";
+    
+          setTimeout(function() {
+            // Đặt tin tức đó vào cuối danh sách
+            newsList.appendChild(firstItem);
+            firstItem.style.transform = "translateX(0)";
+          }, 1000); // Thời gian chuyển động (ms)
+        }
+      }, 3000); // Thời gian chờ giữa các chuyển động (ms)
+    };

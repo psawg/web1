@@ -1,28 +1,28 @@
 /* UTILITY */
 * {
     box-sizing: content-box;
-    /* Đặt box-sizing cho tất cả các phần tử để tính toán kích thước chính xác */
 }
 
 .content{
+    overflow: hidden;
     width: 100%;
-    /* Đặt chiều rộng của phần tử "content" là 100% */
 }
 
 /* TOP CONTAINER */
 .topContent{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
-    /* Cấu hình cho phần tử "topContent" ở trên cùng */
 }
 
 
 #backgroundVideo{
+    position: relative;
+    left: 10%;
     width: 100%;
     opacity: 1;
-    /* Đặt chiều rộng và độ mờ của video nền */
 }
 
 .overlay {
@@ -37,55 +37,117 @@
     align-items: start;
     justify-content: flex-start;
     z-index: 1;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%)  /* Màu nền của lớp chữ ghi đè */
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 100%)  /* Màu nền của lớp chữ ghi đè */
   }
 
   .mainLogo{
-    width: 800px;
-    height: 350px;
+    position: relative;
+    top: 4em;
+    left: 4em;
+    width: max-content;
   }
 
   .mainLogo img {
-    width: 500px;
-    height: 235px;
-    margin-top: 100px;
-    margin-left: 100px;
+    transition: 0.1s ease;
+    width: 40vw;
+    max-width: 500px;
 }
 
 .paragraph{
-    width: 800px;   
-    height: 300px;
-    margin-left: 100px;
+    width: auto;
 }
 .paragraph p{
-    width: 800px;
-    height: 300px;
+    transition: 0.1s ease;
+    width: 55vw;
+    max-width: 650px;
     color: white;
     font-size: 2em;
     margin: 0;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    /* Đặt kich thước, màu sắc, font chữ và khoảng cách cho các đoạn văn bản bên trong phần tử "paragraph" */
-}
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
 
 /* MID CONTAINER */
 .midContent {
     height: max-content;
     background-color: black;
-    /* Đặt chiều cao và màu nền cho phần tử "midContent" */
 }
 
-.midContent .Hero .main1 {
-    padding-top: 4em;
-    margin-left: 12em;
-    color: #ff9f59;
+.Hero {
+    display: flex;
+    width: 100%;
 }
 
-.midContent .Hero .main1 h1 {
-    margin: 0;
+/* NEWS MARQUEE */
+.marquee {
+    background-color: white;
+    color: black;
+    z-index: 1;
+    font-family: 'Verdana', Tahoma, sans-serif;
+    top: 0;
+	left: 0;
+	height: 100%;
+	writing-mode: vertical-rl;
+	text-orientation: sideways-right;
+    transform: rotate(180deg);
+}
+
+.marquee p {
+	overflow: hidden;
+	white-space: nowrap;
+	height: 100%;
+}
+
+.marquee p span {
     font-size: 46px;
     font-weight: 1000;
-    font-family: 'Franklin Gothic',Tahoma, sans-serif;
+    animation: marquee 4s linear infinite;
+	display: inline-flex;
+}
+
+@keyframes marquee {
+    from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
 }
 
 
+/* NEW CONTENT */
+.newsContent {
+    height: fit-content;
+    color: white;
+}
+
+
+
+.newsList{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    gap: 5px;
+}
+.newsItem {
+    display: block;
+    align-items: center;
+    height: 100%;
+    transition: transform 1s ease, box-shadow 0.5s ease; ; /* Thêm transition cho thuộc tính transform */
+}
+
+  
+.newsItem img {
+    width: 380px; /* Đặt chiều rộng ảnh là 100% của phần tử cha */
+    height: 450px; /* Tự động tính toán chiều cao dựa trên tỷ lệ khung hình */
+    border-radius: 8px; /* Bo góc ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo khi thay đổi kích thước */
+  }
+  
+  .newsItem h3 {
+    color: #ff8b4b;
+    margin-top: 10px; /* Khoảng cách từ ảnh đến tiêu đề tin tức */
+    font-size: 16px; /* Kích thước chữ tiêu đề tin tức */
+    font-weight: bold; /* Đậm chữ tiêu đề tin tức */
+  }
 
