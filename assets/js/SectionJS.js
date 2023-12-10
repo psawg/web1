@@ -41,7 +41,7 @@
               '/assets/vid/Minecraft_trailer.mp4'
               // Thêm tên file video khác vào đây
           ];
-          var randomIndex = Math.floor(Math.random() * 6);
+          var randomIndex = Math.floor(Math.random() * videos.length);
           var randomVideo = videos[randomIndex];
           video.src = randomVideo;
           backgroundVideo.load();
