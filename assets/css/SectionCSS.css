@@ -37,7 +37,7 @@
     align-items: start;
     justify-content: flex-start;
     z-index: 1;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0) 100%)  /* Màu nền của lớp chữ ghi đè */
+    background: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%)  /* Màu nền của lớp chữ ghi đè */
   }
 
   .mainLogo{
@@ -79,7 +79,7 @@
 
 /* NEWS MARQUEE */
 .marquee {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
     z-index: 1;
     font-family: 'Verdana', Tahoma, sans-serif;
@@ -127,28 +127,32 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    gap: 5px;
-    height: 550px;
+    /* gap: 10px; */
+    height: 700px;
+    width: auto;
+    left: 10px;
+    top: 10px;
 }
 .newsItem {
     display: block;
     align-items: center;
-    height: 100%;
-    transition: transform 1s ease, box-shadow 0.5s ease; ; /* Thêm transition cho thuộc tính transform */
+    height: 650px;
+    transition: transform 1s ease; /* Thêm transition cho thuộc tính transform */
 }
 
   
 .newsItem img {
-    width: 380px; /* Đặt chiều rộng ảnh là 100% của phần tử cha */
-    height: 450px; /* Tự động tính toán chiều cao dựa trên tỷ lệ khung hình */
+    width: 400px; /* Đặt chiều rộng ảnh là 100% của phần tử cha */
+    height: 600px; /* Tự động tính toán chiều cao dựa trên tỷ lệ khung hình */
     border-radius: 8px; /* Bo góc ảnh */
     object-fit: cover; /* Đảm bảo ảnh không bị méo khi thay đổi kích thước */
   }
   
   .newsItem h3 {
-    color: #ff8b4b;
+    color: rgb(246, 205, 183);
     margin-top: 10px; /* Khoảng cách từ ảnh đến tiêu đề tin tức */
-    font-size: 16px; /* Kích thước chữ tiêu đề tin tức */
+    font-size: 20px; /* Kích thước chữ tiêu đề tin tức */
     font-weight: bold; /* Đậm chữ tiêu đề tin tức */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 

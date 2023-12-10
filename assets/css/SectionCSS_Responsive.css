@@ -34,5 +34,24 @@
         font-size: 25px;
         margin: 0;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      }
+    }
+
+    .marquee{
+        transition: 0.1s ease;
+        width: 20vw;
+        height: 100vw;
+        margin: 0;
+    }
+    .main1_content{
+        transition: 0.1s ease;
+        width: 100vw;
+        height: 100vw;
+        margin: 0;
+    }
+    .newsItem{
+        transition: 0.1s ease;
+        width: 100vw;
+        height: 100vw;
+        margin: 0;
+    }
 }

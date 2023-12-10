@@ -105,7 +105,7 @@ LIST ITEM HOVER
 ==========================================
 */
 .NavBar ul a:hover {
-    background-color: white;
+    background-color: rgb(246, 205, 183);
     color: orange;
     border-radius: 6px;
     transition: 0.2s ease;
