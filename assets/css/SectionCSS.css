@@ -68,7 +68,7 @@
 
 /* MID CONTAINER */
 .midContent {
-    height: 75vh;
+    height: max-content;
     background-color: black;
 }
 
@@ -76,24 +76,45 @@
     display: flex;
 }
 
-.midContent .Hero .marquee {
+/* NEWS MARQUEE */
+.marquee {
+    z-index: 1;
     background-color: white;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    color: #ff9f59;
-    /* top: 4em; */
-    /* left: 4em; */
-
+    color: black;
+    font-family: 'Verdana', Tahoma, sans-serif;
+    top: 0;
+	left: 0;
+	height: 100%;
+	writing-mode: vertical-rl;
+	text-orientation: sideways-right;
 }
 
-.midContent .Hero .marquee h1 {
-    color: black;
-    text-align: center;
-    writing-mode: vertical-lr;
-    height: 75vh;
-    margin: 0;
+.marquee p {
+	overflow: hidden;
+	white-space: nowrap;
+	height: 100%;
+}
+
+.marquee p span {
     font-size: 46px;
     font-weight: 1000;
-    font-family: 'Verdana', Tahoma, sans-serif;
+    animation: marquee 4s linear infinite;
+	display: inline-flex;
+}
+
+@keyframes marquee {
+    from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+
+/* NEW CONTENT */
+.newsContent {
+    height: fit-content;
+    color: white;
 }
