@@ -78,15 +78,16 @@
 
 /* NEWS MARQUEE */
 .marquee {
-    z-index: 1;
     background-color: white;
     color: black;
+    z-index: 1;
     font-family: 'Verdana', Tahoma, sans-serif;
     top: 0;
 	left: 0;
 	height: 100%;
 	writing-mode: vertical-rl;
 	text-orientation: sideways-right;
+    transform: rotate(180deg);
 }
 
 .marquee p {
