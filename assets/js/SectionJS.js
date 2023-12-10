@@ -39,7 +39,7 @@
       var siblings = getSiblings(this);
       siblings.forEach(function(sibling) {
         // sibling.style.marginLeft = "10px"; // Di chuyển sang trái
-        sibling.style.marginRight = "10px"; // Di chuyển sang phải
+        sibling.style.marginRight = "20px"; // Di chuyển sang phải
       });
         });
     
@@ -50,8 +50,8 @@
           this.style.zIndex = "0"; // Đặt lại giá trị z-index ban đầu
 
            // Đặt lại margin của các thành phần xung quanh về giá trị ban đầu
-      var siblings = getSiblings(this);
-      siblings.forEach(function(sibling) {
+        var siblings = getSiblings(this);
+        siblings.forEach(function(sibling) {
         sibling.style.marginLeft = "0"; // Đặt lại margin trái về giá trị ban đầu
         sibling.style.marginRight = "0"; // Đặt lại margin phải về giá trị ban đầu
       });

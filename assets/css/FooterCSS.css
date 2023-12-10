@@ -106,6 +106,8 @@
 
 #content4 li img:hover{
     background-color: rgb(246, 205, 183);
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 #content5{
@@ -137,6 +139,8 @@
 
 #iconContact #content5 li img:hover{
     background-color:  rgb(246, 205, 183);
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 /* COPYRIGHT FOOTER */
