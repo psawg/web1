@@ -28,8 +28,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border: 20px solid white;
+    background-color:   rgb(255, 139, 75); 
+    border: 20px solid   rgb(255, 139, 75); 
     border-radius: 5px;
     box-shadow: 0px 0px 17px 2px #bcb9b9;
 }
