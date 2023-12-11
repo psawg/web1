@@ -1,25 +1,25 @@
-  var videos = [
-    '/assets/vid/GTA_VI_trailer.mp4',
-    '/assets/vid/TUNIC_trailer.mp4',
-    '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
-    '/assets/vid/God_of_War_trailer.mp4',
-    '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
-    '/assets/vid/Minecraft_trailer.mp4'
-    // Thêm tên file video khác vào đây
-  ];
+
   window.addEventListener('DOMContentLoaded', function() {
+
     this.setTimeout(function(){
           var video = document.getElementById('backgroundVideo');
+          var videos = [
+              '/assets/vid/GTA_VI_trailer.mp4',
+              '/assets/vid/TUNIC_trailer.mp4',
+              '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
+              '/assets/vid/God_of_War_trailer.mp4',
+              '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
+              '/assets/vid/Minecraft_trailer.mp4'
+              // Thêm tên file video khác vào đây
+          ];
           var randomIndex = Math.floor(Math.random() * videos.length);
           var randomVideo = videos[randomIndex];
           video.src = randomVideo;
+          backgroundVideo.load();
+
     },2000);
+        
     });
-    
-
-
-
-
 
 
 
@@ -39,7 +39,7 @@
       var siblings = getSiblings(this);
       siblings.forEach(function(sibling) {
         // sibling.style.marginLeft = "10px"; // Di chuyển sang trái
-        sibling.style.marginRight = "20px"; // Di chuyển sang phải
+        sibling.style.marginRight = "10px"; // Di chuyển sang phải
       });
         });
     
@@ -50,8 +50,8 @@
           this.style.zIndex = "0"; // Đặt lại giá trị z-index ban đầu
 
            // Đặt lại margin của các thành phần xung quanh về giá trị ban đầu
-        var siblings = getSiblings(this);
-        siblings.forEach(function(sibling) {
+      var siblings = getSiblings(this);
+      siblings.forEach(function(sibling) {
         sibling.style.marginLeft = "0"; // Đặt lại margin trái về giá trị ban đầu
         sibling.style.marginRight = "0"; // Đặt lại margin phải về giá trị ban đầu
       });
@@ -80,14 +80,14 @@
 
 
     // Hàm lấy các sibling của một element
-    function getSiblings(element) {
-      var siblings = [];
-      var sibling = element.parentNode.firstChild;
-      while (sibling) {
-        if (sibling.nodeType === 1 && sibling !== element) {
-          siblings.push(sibling);
-        }
-        sibling = sibling.nextSibling;
-      }
-      return siblings;
+function getSiblings(element) {
+  var siblings = [];
+  var sibling = element.parentNode.firstChild;
+  while (sibling) {
+    if (sibling.nodeType === 1 && sibling !== element) {
+      siblings.push(sibling);
     }
+    sibling = sibling.nextSibling;
+  }
+  return siblings;
+}
