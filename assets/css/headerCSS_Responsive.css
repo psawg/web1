@@ -72,6 +72,11 @@
     .NavBar .item-container ul li:nth-child(1) {
         display: none;
     }
+
+    /* Reset original size */
+    .NavBar .item-container .sideNav {
+        width: auto !important;
+    }
 }
 
 /* SideNav Style */
