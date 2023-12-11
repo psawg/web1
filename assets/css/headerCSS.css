@@ -6,7 +6,7 @@ UTILITY
 */
 
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: 'Verdana', Tahoma, sans-serif;
 }
 
@@ -52,8 +52,6 @@ NAVIGATION BAR
     
 }
 
-/* TODO: STICKY NAVBAR*/
-
 
 /*
 ==========================================
@@ -75,6 +73,7 @@ LOGO CONTAINER
     border-radius: 6px;
     cursor: pointer;
     transition: 0.1s ease;
+    /* border: 2px solid black; */
 }
 
 /* 
@@ -99,15 +98,10 @@ LIST ITEM
     font-size: 1.5em;
 }
 
-/* 
-==========================================
-LIST ITEM HOVER 
-==========================================
-*/
+/* HOVER */
 .NavBar ul a:hover {
     background-color: rgb(246, 205, 183);
     color: orange;
     border-radius: 6px;
     transition: 0.2s ease;
 }
-

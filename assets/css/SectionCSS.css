@@ -1,11 +1,11 @@
 /* UTILITY */
 * {
-    box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .content{
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 /* TOP CONTAINER */
@@ -79,16 +79,16 @@
 
 /* NEWS MARQUEE */
 .marquee {
-    background-color:  rgb(246, 205, 183);
-    color: rgb(0, 0, 0);
-    z-index: 1;
-    font-family: 'Verdana', Tahoma, sans-serif;
-    top: 0;
+  background-color:  rgb(246, 205, 183);
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  font-family: 'Verdana', Tahoma, sans-serif;
+  top: 0;
 	left: 0;
 	height: 100%;
 	writing-mode: vertical-rl;
 	text-orientation: sideways-right;
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .marquee p {
@@ -114,6 +114,12 @@
 	}
 }
 
+.main1_content {
+  display: flex;
+  align-items: center;
+  z-index: 0;
+}
+
 
 /* NEW CONTENT */
 .newsContent {
@@ -127,7 +133,7 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    /* gap: 10px; */
+    gap: 10px;
     height: 700px;
     width: auto;
     left: 10px;

@@ -10,9 +10,16 @@
         transition: 0.1s ease;
         height: 2em;
     }
+
+    /* LOGO */
+    .NavBar .logo-container img {
+        width: auto;
+        height: 65px;
+        cursor: pointer;
+    }
     
     /* NAVBAR LIST ITEM */
-    .NavBar ul a {
+    .NavBar .item-container ul a {
         display: flex;
         gap: 4px;
         align-items: center;
@@ -20,13 +27,6 @@
         font-size: 1em;
         padding: 0.5em;
         transition: 0.1s ease;
-    }
-
-    /* LOGO */
-    .NavBar .logo-container img {
-        width: auto;
-        height: 65px;
-        cursor: pointer;
     }
 }
 
@@ -38,10 +38,66 @@
 @media only screen and (max-width: 768px) {
     /* NAVBAR */
     .NavBar {
-        justify-content: center;
         align-items: center;
         justify-content: space-between;
         padding: 1.5em 4vw;
-        /* display: none; */
+    }
+
+    /* Hide List Item Content */
+    .NavBar .item-container ul li {
+        /* display: block; */
+    }
+}
+
+/* Show Hamburger Button */
+@media screen and (max-width: 768px) {
+    .NavBar .item-container .openBtn {
+        display: block;
+        cursor: pointer;
+        padding: 0.5em;
+    }
+    
+    .line {
+        display: block;
+        background-color: black;
+        width: 35px;
+        height: 3px;
+        padding: 0;
+        margin: 6px 0;
+    }
+}
+
+/* Hide Hamburger Button */
+@media screen and (min-width: 769px) {
+    .NavBar .item-container ul li:nth-child(1) {
+        display: none;
+    }
+}
+
+/* SideNav Style */
+@media screen and (max-width: 768px) {
+    .sideNav {
+        display: block !important;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;
+        padding-top: 5em;
+        transition: 0.5s;
+    }
+
+    .sideNav .closeBtn {
+        width: fit-content;
+        position: absolute;
+        top: 1.5em;
+        right: 2em;
+    }
+
+    .sideNav .closeBtn a {
+        padding: 0 !important;
     }
 }
