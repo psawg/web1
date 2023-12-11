@@ -1,25 +1,25 @@
-
+  var videos = [
+    '/assets/vid/GTA_VI_trailer.mp4',
+    '/assets/vid/TUNIC_trailer.mp4',
+    '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
+    '/assets/vid/God_of_War_trailer.mp4',
+    '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
+    '/assets/vid/Minecraft_trailer.mp4'
+    // Thêm tên file video khác vào đây
+  ];
   window.addEventListener('DOMContentLoaded', function() {
-
     this.setTimeout(function(){
           var video = document.getElementById('backgroundVideo');
-          var videos = [
-              '/assets/vid/GTA_VI_trailer.mp4',
-              '/assets/vid/TUNIC_trailer.mp4',
-              '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
-              '/assets/vid/God_of_War_trailer.mp4',
-              '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
-              '/assets/vid/Minecraft_trailer.mp4'
-              // Thêm tên file video khác vào đây
-          ];
           var randomIndex = Math.floor(Math.random() * videos.length);
           var randomVideo = videos[randomIndex];
           video.src = randomVideo;
-          backgroundVideo.load();
-
     },2000);
-        
     });
+    
+
+
+
+
 
 
 
@@ -80,14 +80,14 @@
 
 
     // Hàm lấy các sibling của một element
-function getSiblings(element) {
-  var siblings = [];
-  var sibling = element.parentNode.firstChild;
-  while (sibling) {
-    if (sibling.nodeType === 1 && sibling !== element) {
-      siblings.push(sibling);
+    function getSiblings(element) {
+      var siblings = [];
+      var sibling = element.parentNode.firstChild;
+      while (sibling) {
+        if (sibling.nodeType === 1 && sibling !== element) {
+          siblings.push(sibling);
+        }
+        sibling = sibling.nextSibling;
+      }
+      return siblings;
     }
-    sibling = sibling.nextSibling;
-  }
-  return siblings;
-}
