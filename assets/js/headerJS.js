@@ -10,7 +10,7 @@ function closeNav() {
 }
 
 
-function scrollToGames() {
+function scrollToNews() {
     // Lấy phần tử "midContent" bằng id
     var gamesSection = document.getElementById("midContent");
 
@@ -56,5 +56,40 @@ function scrollToGames() {
     }
 
     // Gọi hàm animation() lần đầu tiên để bắt đầu quá trình trượt
+    requestAnimationFrame(animation);
+}
+
+function scrollToGames() {
+    var gamesSection = document.getElementById("botContent");
+
+    var targetPosition = gamesSection.getBoundingClientRect().top + window.scrollY;
+
+    var startPosition = window.scrollY;
+
+    var distance = targetPosition - startPosition;
+
+    var duration = 1000;
+
+    var startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+
+        var elapsedTime = currentTime - startTime;
+
+        var scrollY = ease(elapsedTime, startPosition, distance, duration);
+
+        window.scrollTo(0, scrollY);
+
+        if (elapsedTime < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
     requestAnimationFrame(animation);
 }
