@@ -48,9 +48,6 @@ body {
     gap: 10px;
 }
 .logo img{
-    border: 2px solid black;
-    padding: 5px 5px    ;
-    border-radius: 5px;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -59,7 +56,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .login input{
     width: 300px;
     height: 20px;
+}
+
+.logoimg{
+    width: 40px;
+    height: 40px;
+    padding: 5px 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.logo :hover{
+    background-color: rgb(246, 205, 183);
 }

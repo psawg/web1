@@ -13,6 +13,6 @@ function loadHTMLComponent(url, id){
 loadHTMLComponent('/components/Footer.html', 'footer');
 loadHTMLComponent('/components/Header.html', 'header');
 loadHTMLComponent('/components/Section.html', 'section');
-
+loadHTMLComponent('/components/GTA_VI_Page_Section.html', 'GTAsection');
 
 
