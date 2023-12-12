@@ -195,6 +195,12 @@
     transition: transform 0.1s ease;
   }
 
+  td {
+    padding: 2em 4em;
+  }
+
+
+
   tr, td img{
     width: 330px;
     height: auto;
