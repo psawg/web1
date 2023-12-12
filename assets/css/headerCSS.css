@@ -44,7 +44,7 @@ NAVIGATION BAR
     align-items: center;
     height: 3em;
     position: fixed;
-    /* top: 0; */
+    top: 0;
     width: 100vw;
     gap: 16px;
     padding: 1.5em 5vw;
@@ -52,12 +52,15 @@ NAVIGATION BAR
     z-index: 9999;
 }
 
-
-#idNavbar {
-    top: 0; /* declare value */
+.nav-show {
+    top: 0;
+    transition: top 0.2s linear;
 }
 
-
+.nav-hide {
+    top : -6em;
+    transition: top 0.2s linear;
+}
 /*
 ==========================================
 LOGO CONTAINER
