@@ -14,5 +14,6 @@ loadHTMLComponent('/components/Footer.html', 'footer');
 loadHTMLComponent('/components/Header.html', 'header');
 loadHTMLComponent('/components/Section.html', 'section');
 loadHTMLComponent('/components/GTA_VI_Page_Section.html', 'GTAsection');
+loadHTMLComponent('/components/RedDead_Page_Section.html', 'RedDeadsection');
 loadHTMLComponent('/components/AboutUs_Page_Section.html', 'AboutUssection');
 
