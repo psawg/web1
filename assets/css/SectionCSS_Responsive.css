@@ -38,30 +38,46 @@
 
     .marquee{
         transition: 0.1s ease;
-        width: 10vw;
-        height: 100vw;
+        width: auto;
+        height: 75vh;
         margin: 0;
     }
+
+    .marquee p span {
+        font-size: 28px;
+    }
+
     .main1_content{
         transition: 0.1s ease;
-        width: 90vw;
+        width: calc(100vw - 4em);
         height: auto;
         margin: 0;
     }
+
+    .newsList {
+        height: auto;
+    }
+
+    .newsItem {
+        height: inherit;
+    }
+
     .newsItem img{
         transition: 0.1s ease;
-        width: 40vw;
-        height: 50vh;
+        width: 200px;
+        height: 300px;
         margin: 0;
     }
 
-
+    .newsItem h3 {
+        font-size: 15px;
+    }
 
 
     table{
         transition: 0.1s ease;
         width: 30px;
-        height: auto;
+        height: 70px;
         margin: 0;
     }
     tr, td{
@@ -75,5 +91,31 @@
         width: 22vw;
         height: auto;
         margin: 0;
+    }
+}
+
+/* 
+==========================================
+    TABLET USER
+==========================================
+*/
+@media only screen and (max-width: 768px) {
+    #backgroundVideo {
+        position: relative;
+        left: 0;
+    }
+    
+    .overlay {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    
+    .mainLogo {
+        left: 2em;
+        top: 2em;
+    }
+    
+    .mainLogo .paragraph p {
+        font-size: 1em;
+    
     }
 }
