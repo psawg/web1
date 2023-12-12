@@ -39,7 +39,7 @@
     .marquee{
         transition: 0.1s ease;
         width: auto;
-        height: 75vh;
+        height: 60vh;
         margin: 0;
     }
 
@@ -50,8 +50,12 @@
     .main1_content{
         transition: 0.1s ease;
         width: calc(100vw - 4em);
-        height: auto;
+        height: 60vh;
         margin: 0;
+    }
+
+    .newsContent {
+        height: 60vh;
     }
 
     .newsList {
@@ -70,7 +74,7 @@
     }
 
     .newsItem h3 {
-        font-size: 15px;
+        font-size: 12px;
     }
 
 
