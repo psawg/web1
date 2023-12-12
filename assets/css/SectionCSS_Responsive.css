@@ -39,7 +39,7 @@
     .marquee{
         transition: 0.1s ease;
         width: auto;
-        height: 60vh;
+        height: 100%;
         margin: 0;
     }
 
@@ -107,6 +107,7 @@
     
     .mainLogo {
         left: 2em;
+        top: 2em;
     }
     
     .mainLogo .paragraph p {

@@ -23,9 +23,9 @@
         display: flex;
         gap: 4px;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         font-size: 1em;
-        padding: 0.5em;
+        padding: 1em;
         transition: 0.1s ease;
     }
 }
@@ -84,7 +84,7 @@
 @media screen and (max-width: 768px) {
     .sideNav {
         display: block !important;
-        height: 100%;
+        height: 91vh;
         width: 0;
         position: fixed;
         z-index: 1;
@@ -93,7 +93,8 @@
         background-color:rgb(246, 205, 183);
         overflow-x: hidden;
         padding-top: 5em;
-        transition: 0.5s;
+        transition: 0.3s;
+        border-radius: 80px 0 0 80px;
     }
 
     .sideNav .closeBtn {
@@ -105,5 +106,27 @@
 
     .sideNav .closeBtn a {
         padding: 0 !important;
+    }
+
+    .NavBar .item-container ul a{
+        padding: 1.5em 2em;
+    }
+}
+
+/* 
+==========================================
+    MOBILE L USER
+==========================================
+*/
+
+@media only screen and (max-width: 425px) {
+    /* NavBar */
+    .NavBar {
+        padding: 1em 4vw
+    }
+    
+    /* LOGO */
+    .NavBar .logo-container img {
+        height: 45px;
     }
 }
