@@ -45,9 +45,9 @@
     }
 
     /* Hide List Item Content */
-    .NavBar .item-container ul li {
-        /* display: block; */
-    }
+    /* .NavBar .item-container ul li {
+        display: block;
+    } */
 }
 
 /* Show Hamburger Button */

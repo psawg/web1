@@ -38,7 +38,7 @@
     align-items: start;
     justify-content: flex-start;
     z-index: 1;
-    background: linear-gradient(to right, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%)  /* Màu nền của lớp chữ ghi đè */
+    background: linear-gradient(to right, rgb(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%)  /* Màu nền của lớp chữ ghi đè */
   }
 
   .mainLogo{
@@ -175,13 +175,23 @@
     padding: 4vw 1vw;
   }
 
+  /* BOTTOM CONTENT SCROLLBAR */
+  .botContent::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background-color: black;
+  }
+
+  .botContent::-webkit-scrollbar-thumb {
+    background-color: orange;
+  }
 
 
   table {
     position: relative;
     border-spacing: 10px;
     width: 100%;
-    height: 700px;
+    height: 600px;
     
   }
   
