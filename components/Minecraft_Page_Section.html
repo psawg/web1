@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\Minecraft_PageCSS.css">
-    <title>Minecraft</title>
+    <link rel="stylesheet" href="/styles/Minecraft_PageCSS.css"></link>
 </head>
 <body>
     <main>
         <section id="banner-image">
-            <img src="assets\images\img_page_Minecraft\minecraft_banner.png" alt="Minecraft Banner">
+            <img src="/assets/images/img_page_Minecraft/minecraft_banner.png" alt="Minecraft Banner">
         </section>
         <section id="info-game-container">
                     <h1>Minecraft - v1.14.4</h1>
@@ -20,9 +19,9 @@
                 <span style="color: brown; font-weight: bold;">Minecraft</span> là một trò chơi về cách đặt khối và tiếp tục cuộc phiêu lưu. Khám phá và những sáng tạo tuyệt vời của cộng đồng, Minecraft tựa game sinh tồn trong một thế giới Zombie, bạn sẽ nhập vai thành nhân vật Steve, bạn sẽ được đưa vào một thế giới ô vuông với nhiều sinh vật khác nhau! Bạn phải chặt cây, đào đá, làm mọi thứ để sinh sống trong thế giới mai cờ ráp.
             </h3>
             <div id="trailer-holder">
-                    <video controls>
-                        <source src="assets\vid\Minecraft_trailer.mp4" type="video">
-                    </video>
+                <video controls="" autoplay name="media">
+                    <source src="/assets/vid/Minecraft_trailer.mp4" type="video/mp4;codecs="avc1.42E01E, mp4a.40.2>
+                </video>
             </div>
         </section>
         <section id="paragraph">
@@ -35,34 +34,34 @@
         <div class="slideshow-container">
 
         <!--fullwidth ảnh với number text -->
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
-                <img src="assets\images\img_page_Minecraft\minecraft_1.png" style="width:100%">
+                <img src="/assets/images/img_page_Minecraft/minecraft_1.png" style="width:100%">
             </div>
   
-            <div class="mySlides fade">
+            <div class="mySlides">
               <div class="numbertext">2 / 6</div>
-              <img src="assets\images\img_page_Minecraft\minecraft_2.png" style="width:100%">
+              <img src="/assets/images/img_page_Minecraft/minecraft_2.png" style="width:100%">
             </div>
         
-            <div class="mySlides fade">
+            <div class="mySlides">
               <div class="numbertext">3 / 6</div>
-              <img src="assets\images\img_page_Minecraft\minecraft_3.png" style="width:100%">
+              <img src="/assets/images/img_page_Minecraft/minecraft_3.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
-                <img src="assets\images\img_page_Minecraft\minecraft_4.png" style="width:100%">
+                <img src="/assets/images/img_page_Minecraft/minecraft_4.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                <img src="assets\images\img_page_Minecraft\minecraft_5.png" style="width:100%">
+                <img src="/assets/images/img_page_Minecraft/minecraft_5.png" style="width:100%">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                <img src="assets\images\img_page_Minecraft\minecraft_6.png" style="width:100%">
+                <img src="/assets/images/img_page_Minecraft/minecraft_6.png" style="width:100%">
             </div>
         
             <!-- Next and previous buttons -->
@@ -74,22 +73,22 @@
             </div>
             <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="images\minecraft_1.png" style="width:100%" onclick="currentSlide(1)" alt="Ocean in Minecraft">
+                    <img class="demo" src="/assets/images/img_page_Minecraft/minecraft_1.png" style="width:100%" onclick="currentSlide(1)" alt="Ocean in Minecraft">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="images\minecraft_2.png" style="width:100%" onclick="currentSlide(2)" alt="Gameplay">
+                    <img class="demo" src="/assets/images/img_page_Minecraft/minecraft_2.png" style="width:100%" onclick="currentSlide(2)" alt="Gameplay">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="images\minecraft_3.png" style="width:100%" onclick="currentSlide(3)" alt="Multiplayer">
+                    <img class="demo" src="/assets/images/img_page_Minecraft/minecraft_3.png" style="width:100%" onclick="currentSlide(3)" alt="Multiplayer">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="images\minecraft_4.png" style="width:100%" onclick="currentSlide(4)" alt="Mobs in Minecraft">
+                    <img class="demo" src="/assets/images/img_page_Minecraft/minecraft_4.png" style="width:100%" onclick="currentSlide(4)" alt="Mobs in Minecraft">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="images\minecraft_5.png" style="width:100%" onclick="currentSlide(5)" alt="Go fishing">
+                    <img class="demo" src="/assets/images/img_page_Minecraft/minecraft_5.png" style="width:100%" onclick="currentSlide(5)" alt="Go fishing">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="images\minecraft_6.png" style="width:100%" onclick="currentSlide(6)" alt="Go mining">
+                    <img class="demo" src="/assets/images/img_page_Minecraft/minecraft_6.png" style="width:100%" onclick="currentSlide(6)" alt="Go mining">
                 </div>
             </div>
             <h6>Một số hình ảnh trong game</h6>
@@ -98,7 +97,14 @@
             <p>Cốt lõi của game xoay quanh việc đặt và phá block. Bản chất thế giới được tạo từ nhiều vật 3D – chủ yếu là khối lập phương – được sắp xếp một chỗ nhất định theo một mạng lưới và được chia thành nhiều vật liệu như đất, đá, quặng, nước và thân cây.</p>
             <p> Trong khi người chơi có thể di chuyển tự do khắp thế giới, vật và đồ chỉ đặt được chỗ nhất định. Người chơi có thể thu những khối vật liệu này và đặt chúng ở chỗ khác điều này cho phép xây dựng nhiều công trình khác nhau.</p>
         </section>
+
+        <section id="paragraph">
+            <h1>Tổng kết</h1>
+            <p>Minecraft không chỉ là một trò chơi, mà là một thế giới mà bạn có thể khám phá và tạo ra những điều kỳ diệu. Bạn có thể chơi một mình hoặc kết nối với cộng đồng để chia sẻ sáng tạo và khám phá thế giới lập phương này. Hãy sẵn sàng đắm chìm vào thế giới Minecraft, 
+                nơi cuộc phiêu lưu không có giới hạn!</p>
+        </section>
+        <button id="scrollToTopBtn">Top</button>
     </main>
-    <script src="scripts\Minecraft_PageJS.js"></script>
+    <script src="/scripts/Minecraft_PageJS.js"></script>
 </body>
 </html>

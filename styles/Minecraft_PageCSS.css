@@ -1,13 +1,11 @@
-*{
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    box-sizing: border-box;
-}
 main{
+    box-sizing: border-box;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
     height: auto;
-    background-color: rgb(246, 205, 183);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px ;
 }
 /* macro flex */
 .flex{
@@ -22,17 +20,19 @@ main{
 /* chữ Minecraft ở đầu văn bản */
 #info-game-container h1{
     font-size: 4vh;
+    
 }
 
 /* ô video trailer */
 #trailer-holder {
-    max-width: 80%;
+    max-width: 100%;
     max-height: auto;
     display: flex;
+    justify-content: center;
 }
 /* css video */
 #trailer-holder video{
-    width: 100%;
+    width: 500px;
     height: auto;
 }
 /* trang trí chữ minecraft */
@@ -71,7 +71,7 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -88,12 +88,12 @@ img {
 /*Tô đen nút chuyển ảnh khi đưa chuột vào*/
 .prev:hover,
 .next:hover {
-    background-color: rgb(255, 139, 75);
+    background-color: rgb(0, 0, 0);
 }
 
 /* Number text */
 .numbertext {
-    color: #000000;
+    color: #ffffff;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -103,9 +103,9 @@ img {
 /* Container image text */
 .caption-container {
     text-align: center;
-    background-color: rgb(255, 139, 75);
+    background-color: rgb(0, 0, 0);
     padding: 2px 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .row:after {
@@ -139,4 +139,21 @@ img {
     font-size: small;
     /* chinh mau chu */
     color: rgb(103, 103, 103);
+}
+
+/* nut cuon len dau trang */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9e5353;
+    color: #dc0000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
 }
