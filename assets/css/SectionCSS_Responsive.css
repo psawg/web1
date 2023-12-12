@@ -38,10 +38,15 @@
 
     .marquee{
         transition: 0.1s ease;
-        width: 10vw;
+        width: auto;
         height: 100vw;
         margin: 0;
     }
+
+    .marquee p span {
+        font-size: 32px;
+    }
+
     .main1_content{
         transition: 0.1s ease;
         width: 90vw;
@@ -51,11 +56,9 @@
     .newsItem img{
         transition: 0.1s ease;
         width: 40vw;
-        height: 50vh;
+        height: 70vh;
         margin: 0;
     }
-
-
 
 
     table{
