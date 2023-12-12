@@ -121,13 +121,14 @@
 .main1_content {
   display: flex;
   align-items: center;
+  height: auto;
   z-index: 0;
 }
 
 
 /* NEW CONTENT */
 .newsContent {
-    height: fit-content;
+    height: 70vh; 
     color: white;
 }
 
