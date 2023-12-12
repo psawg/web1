@@ -1,12 +1,11 @@
 // Hamburger Open Side Nav
 function openNav() {
-    document.getElementById("idSideNav").style.width = "250px";
+  document.getElementById("idSideNav").style.width = "250px";
 }
 
 // Hamburger Close Side Nav
 function closeNav() {
-    document.getElementById("idSideNav").style.width = "0px";
-
+  document.getElementById("idSideNav").style.width = "0px";
 }
 
 // Navbar when scroll down, hide Navbar
@@ -23,113 +22,113 @@ function closeNav() {
 //     lastScrollTop = scrollTop;
 // });
 
-
 let lastScrollTop = 0;
 let timeout;
 
-window.addEventListener('scroll', function() {
-
+window.addEventListener("scroll", function () {
+  var navBar = document.querySelector(".NavBar");
   clearTimeout(timeout);
-  
+
   timeout = setTimeout(() => {
-    const threshold = 50;
-    const navBar = document.querySelector('.NavBar');
+    // const threshold = 50;
+    const navBar = document.querySelector(".NavBar");
 
     if (window.scrollY > lastScrollTop) {
-      navBar.classList.remove('nav-show');
-      navBar.classList.add('nav-hide');
+        navBar.classList.add("nav-hide");
+        navBar.classList.remove("nav-show");
     } else {
-      navBar.classList.add('nav-show');  
-      navBar.classList.remove('nav-hide');
+        navBar.classList.add("nav-show");
+        navBar.classList.remove("nav-hide");
     }
 
     lastScrollTop = window.scrollY;
-
-  }, 15); // delay in milliseconds
-
+    // console.log(lastScrollTop);
+    console.log(window.scrollY);
+  }, 10); // delay in milliseconds
 });
 
-
 function scrollToNews() {
-    // Lấy phần tử "midContent" bằng id
-    var gamesSection = document.getElementById("midContent");
+  // Lấy phần tử "midContent" bằng id
+  var gamesSection = document.getElementById("midContent");
 
-    // Lấy vị trí của phần tử "midContent" cùng với vị trí cuộn hiện tại của trang
-    var targetPosition = gamesSection.getBoundingClientRect().top + window.scrollY;
+  // Lấy vị trí của phần tử "midContent" cùng với vị trí cuộn hiện tại của trang
+  var targetPosition =
+    gamesSection.getBoundingClientRect().top + window.scrollY;
 
-    // Lấy vị trí cuộn hiện tại của trang
-    var startPosition = window.scrollY;
+  // Lấy vị trí cuộn hiện tại của trang
+  var startPosition = window.scrollY;
 
-    // Tính khoảng cách cần di chuyển từ vị trí hiện tại đến vị trí đích
-    var distance = targetPosition - startPosition;
+  // Tính khoảng cách cần di chuyển từ vị trí hiện tại đến vị trí đích
+  var distance = targetPosition - startPosition;
 
-    // Thời gian mà quá trình trượt sẽ diễn ra (trong mili giây)
-    var duration = 1000;
+  // Thời gian mà quá trình trượt sẽ diễn ra (trong mili giây)
+  var duration = 1000;
 
-    // Thời điểm bắt đầu của quá trình trượt
-    var startTime = null;
+  // Thời điểm bắt đầu của quá trình trượt
+  var startTime = null;
 
-    // Hàm thực hiện quá trình trượt mượt
-    function animation(currentTime) {
-        // Nếu chưa có startTime, gán startTime bằng currentTime
-        if (startTime === null) startTime = currentTime;
+  // Hàm thực hiện quá trình trượt mượt
+  function animation(currentTime) {
+    // Nếu chưa có startTime, gán startTime bằng currentTime
+    if (startTime === null) startTime = currentTime;
 
-        // Tính thời gian đã trôi qua từ khi bắt đầu quá trình trượt
-        var elapsedTime = currentTime - startTime;
+    // Tính thời gian đã trôi qua từ khi bắt đầu quá trình trượt
+    var elapsedTime = currentTime - startTime;
 
-        // Tính giá trị mới của vị trí cuộn dựa trên hàm easing
-        var scrollY = ease(elapsedTime, startPosition, distance, duration);
+    // Tính giá trị mới của vị trí cuộn dựa trên hàm easing
+    var scrollY = ease(elapsedTime, startPosition, distance, duration);
 
-        // Thiết lập vị trí cuộn mới cho trang
-        window.scrollTo(0, scrollY);
+    // Thiết lập vị trí cuộn mới cho trang
+    window.scrollTo(0, scrollY);
 
-        // Nếu thời gian đã trôi qua chưa đạt đến thời gian trượt, tiếp tục gọi animation()
-        if (elapsedTime < duration) requestAnimationFrame(animation);
-    }
+    // Nếu thời gian đã trôi qua chưa đạt đến thời gian trượt, tiếp tục gọi animation()
+    if (elapsedTime < duration) requestAnimationFrame(animation);
+  }
 
-    // Hàm easing để tạo hiệu ứng trượt mượt
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-    }
+  // Hàm easing để tạo hiệu ứng trượt mượt
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
 
-    // Gọi hàm animation() lần đầu tiên để bắt đầu quá trình trượt
-    requestAnimationFrame(animation);
+  // Gọi hàm animation() lần đầu tiên để bắt đầu quá trình trượt
+  requestAnimationFrame(animation);
 }
 
 function scrollToGames() {
-    var gamesSection = document.getElementById("botContent");
+  var gamesSection = document.getElementById("botContent");
 
-    var targetPosition = gamesSection.getBoundingClientRect().top + window.scrollY;
+  var targetPosition =
+    gamesSection.getBoundingClientRect().top + window.scrollY;
 
-    var startPosition = window.scrollY;
+  var startPosition = window.scrollY;
 
-    var distance = targetPosition - startPosition;
+  var distance = targetPosition - startPosition;
 
-    var duration = 1000;
+  var duration = 1000;
 
-    var startTime = null;
+  var startTime = null;
 
-    function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
 
-        var elapsedTime = currentTime - startTime;
+    var elapsedTime = currentTime - startTime;
 
-        var scrollY = ease(elapsedTime, startPosition, distance, duration);
+    var scrollY = ease(elapsedTime, startPosition, distance, duration);
 
-        window.scrollTo(0, scrollY);
+    window.scrollTo(0, scrollY);
 
-        if (elapsedTime < duration) requestAnimationFrame(animation);
-    }
+    if (elapsedTime < duration) requestAnimationFrame(animation);
+  }
 
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-    }
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
 
-    requestAnimationFrame(animation);
+  requestAnimationFrame(animation);
 }
