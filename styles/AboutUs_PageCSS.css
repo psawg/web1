@@ -1,27 +1,79 @@
 #aboutContent{
-    padding-top: 6em;
+    /* padding-top: 3em; */
     width: 100%;
     height: 100%;
 }
 
 #titleAbout{
-    background-color: black;
     width: 100%;
-    height: 4%;
+    height: 900px;
 }
- h1{
-    margin: 0%;
-    color:  #ff8b4b;
- }
+
+
+#titleAbout img{
+    width: 100%;
+    height: 900px;
+}
+
 
  
 #Host1{
     display: flex;
-    background-color: #ff8b4b;
+    background-color: #000000;
+    
+
+}
+
+#Host1 #infoHost1{
+    position:relative;
+    width: 100%;
+
+}
+#Host1 #infoHost1 h2{
+    color:  rgb(255, 139, 75);
+    left: 50px;
+    width: 450px;
+    height: 50px;
+    position:relative;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    top: 30px;
 }
 
 
+#Host1 #infoHost1 p{
+    color:  rgb(255, 139, 75);
+    left: 50px;
+    width: 800px;
+    height: 100px;
+    position:relative;
+    font-size: 35px;
+    margin: 0%;
+}
+
+#Host1 #infoHost1 #fistName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px ;
+    font-weight: bold;
+    top: 20px;
+}
+
+#Host1 #infoHost1 #lastName{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    top: -25px;
+    
+}
 #imgHost1 img{
     width: 400px;
     height: 400px;
+}
+
+
+
+#Host2{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(246, 205, 183);
 }
