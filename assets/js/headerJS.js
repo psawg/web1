@@ -9,6 +9,21 @@ function closeNav() {
 
 }
 
+// Navbar when scroll down, hide Navbar
+let lastScrollTop;
+navbar = document.getElementById('idNavBar');
+window.addEventListener('scroll',function(){
+    var scrollTop = window.scrollX || document.documentElement.scrollTop;
+    if(scrollTop > lastScrollTop){
+        navbar.style.top = '-3em';
+    }
+    else{
+        navbar.style.top = '0';
+    }
+    lastScrollTop = scrollTop;
+});
+
+
 
 function scrollToNews() {
     // Lấy phần tử "midContent" bằng id
