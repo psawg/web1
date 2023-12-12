@@ -1,0 +1,27 @@
+#aboutContent{
+    padding-top: 6em;
+    width: 100%;
+    height: 100%;
+}
+
+#titleAbout{
+    background-color: black;
+    width: 100%;
+    height: 4%;
+}
+ h1{
+    margin: 0%;
+    color:  #ff8b4b;
+ }
+
+ 
+#Host1{
+    display: flex;
+    background-color: #ff8b4b;
+}
+
+
+#imgHost1 img{
+    width: 400px;
+    height: 400px;
+}
