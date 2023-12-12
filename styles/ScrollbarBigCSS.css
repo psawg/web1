@@ -1,7 +1,8 @@
 .scrollbar1{
     overflow-y: scroll; /* Hiển thị thanh cuộn dọc */
     max-height: 100vh;
-    z-index: 99999;
+    /* z-index: 99999; */
+    transition: transform 0.2s ease;
   }
 
   /* Hiển thị thanh cuộn chỉ khi cuộn trang */
@@ -13,13 +14,15 @@
   
   /* Tùy chỉnh màu sắc và hình dạng của thumb */
   .scrollbar1::-webkit-scrollbar-thumb {
-    background-color: #ff8b4b;
+    background-color: rgb(246, 205, 183);
     border-radius: 5px;
+    /* border: 2px solid #ff8b4b;  */
+    height: 1vw;
   }
   
   /* Tùy chỉnh màu nền của thanh cuộn */
   .scrollbar1::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, 0.8);
   }
 
 

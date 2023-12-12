@@ -8,23 +8,10 @@ function closeNav() {
   document.getElementById("idSideNav").style.width = "0px";
 }
 
-// Navbar when scroll down, hide Navbar
-// let lastScrollTop;
-// navbar = document.getElementById('idNavBar');
-// window.addEventListener('scroll',function(){
-//     var scrollTop = window.scrollX ;//|| document.documentElement.scrollTop;
-//     if(scrollTop > lastScrollTop){
-//         navbar.style.top = '-3em';
-//     }
-//     else{
-//         navbar.style.top = '0';
-//     }
-//     lastScrollTop = scrollTop;
-// });
 
+//Behavior NavBar Scroll
 let lastScrollTop = 0;
 let timeout;
-
 window.addEventListener("scroll", function () {
   var navBar = document.querySelector(".NavBar");
   clearTimeout(timeout);
@@ -43,17 +30,20 @@ window.addEventListener("scroll", function () {
 
     lastScrollTop = window.scrollY;
     // console.log(lastScrollTop);
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
   }, 10); // delay in milliseconds
 });
 
+
+
+
+//Cuộn tới phần news khi nhấn "News" trên NavBar
 function scrollToNews() {
   // Lấy phần tử "midContent" bằng id
-  var gamesSection = document.getElementById("midContent");
+  var NewsSection = document.getElementById("midContent");
 
   // Lấy vị trí của phần tử "midContent" cùng với vị trí cuộn hiện tại của trang
-  var targetPosition =
-    gamesSection.getBoundingClientRect().top + window.scrollY;
+  var targetPosition = NewsSection.getBoundingClientRect().top + window.scrollY;
 
   // Lấy vị trí cuộn hiện tại của trang
   var startPosition = window.scrollY;
@@ -97,6 +87,8 @@ function scrollToNews() {
   requestAnimationFrame(animation);
 }
 
+
+//Cuộn tới phần game table khi nhấn "Game" trên NavBar
 function scrollToGames() {
   var gamesSection = document.getElementById("botContent");
 
