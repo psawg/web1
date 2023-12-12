@@ -25,19 +25,27 @@ function closeNav() {
 
 
 let lastScrollTop = 0;
+let timeout;
+
 window.addEventListener('scroll', function() {
 
-    var navBar = document.querySelector('.NavBar');
-    if (window.scrollY > lastScrollTop) {
-        navBar.classList.remove('nav-show');
-        navBar.classList.add('nav-hide');
-    } else {
-        navBar.classList.add('nav-show');
-        navBar.classList.remove('nav-hide');
-    }
-    lastScrollTop = window.scrollY;
-    // console.log(lastScrollTop);
+  clearTimeout(timeout);
+  
+  timeout = setTimeout(() => {
+    const threshold = 50;
+    const navBar = document.querySelector('.NavBar');
 
+    if (window.scrollY > lastScrollTop) {
+      navBar.classList.remove('nav-show');
+      navBar.classList.add('nav-hide');
+    } else {
+      navBar.classList.add('nav-show');  
+      navBar.classList.remove('nav-hide');
+    }
+
+    lastScrollTop = window.scrollY;
+
+  }, 15); // delay in milliseconds
 
 });
 

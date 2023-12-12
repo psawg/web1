@@ -54,12 +54,12 @@ NAVIGATION BAR
 
 .nav-show {
     top: 0;
-    transition: top 0.2s linear;
+    transition: top 0.2s ease;
 }
 
 .nav-hide {
     top : -6em;
-    transition: top 0.2s linear;
+    transition: top 0.2s ease;
 }
 /*
 ==========================================
