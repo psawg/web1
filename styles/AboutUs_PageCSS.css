@@ -1,43 +1,91 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&display=swap');
-*{
-    font-family: Kanit;
-}
-#aboutContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#titleAbout img {
+#aboutContent{
+    /* padding-top: 3em; */
     width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    height: 100%;
 }
 
-#imgAndInfo {
+#titleAbout{
+    width: 100%;
+    height: 900px;
+}
+
+
+#titleAbout img{
+    width: 100%;
+    height: 900px;
+}
+
+
+ 
+#Host1{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
+    background-color: #000000;
+    
 
-.host-container {
-    flex: 1 1 calc(25% - 20px);
-    text-align: center;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
+#Host1 #imgHost1 img{
+    width: 300px;
+    height: 300px;
+    
+
+}
+#Host1 #infoHost1{
+    position:relative;
+    width: 100%;
+
+}
+#Host1 #infoHost1 h2{
+    color:  rgb(255, 139, 75);
+    left: 50px;
+    width: 450px;
+    height: 50px;
+    position:relative;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    top: 30px;
+}
+
+
+#Host1 #infoHost1 p{
+    color:  rgb(255, 139, 75);
+    left: 50px;
+    width: 800px;
+    height: 100px;
+    position:relative;
+    font-size: 35px;
+    margin: 0%;
+}
+
+#Host1 #infoHost1 #fistName{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px ;
+    font-weight: bold;
+    top: 20px;
+}
+
+#Host1 #infoHost1 #lastName{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    top: -25px;
+    
+}
 #imgHost1 img{
     width: 400px;
     height: 400px;
+}
+
+
+
+#Host2{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(246, 205, 183);
+}
+
+#AboutContact{
+    
 }
