@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/AccountCSS.css">
-    <link rel="icon" href="/assets/images/icon_miniLogoHome.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/AccountCSS.css" />
+    <link rel="icon" href="/assets/images/icon_miniLogoHome.png" />
     <script language="JavaScript" src="/scripts/AccountJS.js"></script>
     <title>Account Center</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="content">
-            <div class="avatar">
-                <img src="/assets/images/icon_logoHome.png" alt="avatar">
-                <h1>Đăng nhập</h1>
-            </div>
-        
-            <div class="login">
-                <form name="login" onsubmit="return validate()" style="display: flex;flex-direction: column;gap: 10px;">
-                    <input type="text" size="20" name="userName" placeholder="Username">
-                    <input type="text" size="20" name="password" placeholder="Password">
-                    <input type="submit" name="Tiếp tục" value="Tiếp tục">
-                </form>
-            </div>
-            
-            <div>
-                <p>Hoặc đăng nhập bằng</p>
-            </div>
-            
-            <div class="logo">
-                <div class="logoimg"><img src="/assets/images/icon_facebook.png" alt="facebook"></div>
-                <div class="logoimg"><img src="/assets/images/icon_discord.png" alt="discord"></div>
-                <div class="logoimg"><img src="/assets/images/icon_instagram.png" alt="instagram"></div>
-            </div>
-        
-            <div>
-                <p>Đăng ký tài khoản</p>
-            </div>
-        
-            <div>
-                Copyright © 2022. AllOfGames.
-            </div>
+      <div class="content">
+        <div class="avatar">
+          <img src="/assets/images/icon_logoHome.png" alt="avatar" />
+          <h1>Login</h1>
         </div>
-    
-</div>
-</body>
+
+        <div class="login">
+          <form name="login" onsubmit="return validate()">
+            <input
+              type="text"
+              size="20"
+              name="userName"
+              placeholder="Username"
+            />
+            <input
+              type="password"
+              size="20"
+              name="password"
+              placeholder="Password"
+            />
+            <input type="submit" name="Continue" value="Continue" />
+          </form>
+        </div>
+
+        <div class="diffForm">
+          <hr>
+          <p>Or Login With Your</p>
+          <hr>
+        </div>
+
+        <div class="logo">
+          <div class="logoimg">
+            <img src="/assets/images/icon_facebook.png" alt="facebook" />
+          </div>
+          <div class="logoimg">
+            <img src="/assets/images/icon_discord.png" alt="discord" />
+          </div>
+          <div class="logoimg">
+            <img src="/assets/images/icon_instagram.png" alt="instagram" />
+          </div>
+        </div>
+        
+        <div>
+          <p>Create An Account</p>
+        </div>
+
+        <div>Copyright © 2022. AllOfGames.</div>
+      </div>
+    </div>
+  </body>
 </html>

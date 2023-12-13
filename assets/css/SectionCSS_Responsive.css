@@ -3,7 +3,10 @@
     SMALL-LAPTOP USER
 ==========================================
 */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {    
+    .content {
+        padding-top: 5em;
+    }
     .mainLogo{
         transition: 0.1s ease;
         position: relative;

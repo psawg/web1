@@ -8,7 +8,7 @@ function validate() {
         return false
     }
     else {
-        alert ("dang nhap thanh cong")
+        alert ("Successfully Logged In")
         window.location.href = "/All_Of_Games.html";
         return true;
     }
