@@ -9,8 +9,8 @@ function validate() {
     }
     else {
         alert ("dang nhap thanh cong")
-        window.location.href = '/All_Of_Games.html';
-        return true
+        window.location.href = "/All_Of_Games.html";
+        return true;
     }
 }
 

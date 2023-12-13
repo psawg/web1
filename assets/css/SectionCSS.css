@@ -127,8 +127,13 @@
 
 
 /* NEW CONTENT */
+
+
 .newsContent {
-    height: 70vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; 
     color: white;
 }
 
@@ -136,6 +141,7 @@
 
 .newsList{
     display: flex;
+    justify-self: space-evenly;
     position: relative;
     overflow: hidden;
     gap: 10px;
@@ -148,10 +154,30 @@
     display: block;
     align-items: center;
     height: 650px;
-    transition: transform 1s ease; /* Thêm transition cho thuộc tính transform */
+    transition: transform 2s ease; 
+}
+/* 
+.newsContent {
+  overflow: hidden;
+  position: relative;
 }
 
-  
+.newsList {
+  display: flex;
+  transition: transform 1s ease-in-out; 
+}
+
+.newsItem {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+
+
+  margin-right: 10px;
+  transition: transform 1s ease-in-out; 
+
+ */
+
 .newsItem img {
     width: 400px; /* Đặt chiều rộng ảnh là 100% của phần tử cha */
     height: 600px; /* Tự động tính toán chiều cao dựa trên tỷ lệ khung hình */
@@ -226,3 +252,5 @@
     z-index: 2;
   }
  
+
+  

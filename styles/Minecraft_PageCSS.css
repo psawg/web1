@@ -1,0 +1,142 @@
+*{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: rgb(246, 205, 183);
+}
+/* macro flex */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ảnh banner trên cùng */
+#banner-image img{
+    width: 100%;
+}
+/* chữ Minecraft ở đầu văn bản */
+#info-game-container h1{
+    font-size: 4vh;
+}
+
+/* ô video trailer */
+#trailer-holder {
+    max-width: 80%;
+    max-height: auto;
+    display: flex;
+}
+/* css video */
+#trailer-holder video{
+    width: 100%;
+    height: auto;
+}
+/* trang trí chữ minecraft */
+#paragraph h1{
+    color: brown;
+    font-weight: bold;
+}
+
+
+/* slide show ở đây*/
+img {
+    vertical-align: middle;
+}
+
+/*cai dat vi tri cho 2 nut trai phai*/
+.slideshow-container {
+    position: relative;
+}
+
+/*Hide anh*/
+.mySlides {
+    display: none;
+}
+
+/*add ngon tro*/
+.cursor {
+    cursor: pointer;
+}
+
+/*Nút trước và sau*/
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/*đưa vị trí nút next qua phải*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*Tô đen nút chuyển ảnh khi đưa chuột vào*/
+.prev:hover,
+.next:hover {
+    background-color: rgb(255, 139, 75);
+}
+
+/* Number text */
+.numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container image text */
+.caption-container {
+    text-align: center;
+    background-color: rgb(255, 139, 75);
+    padding: 2px 16px;
+    color: rgb(0, 0, 0);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*dat 6 cot ke nhau*/
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/*tao hieu ung cho anh chinh */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.slideshow-container h6{
+    /* dem chu thich len gan slideshow */
+    margin-top: 5px; 
+    /* dem chu thich ra giua */
+    text-align: center;
+    /* chon size nho */
+    font-size: small;
+    /* chinh mau chu */
+    color: rgb(103, 103, 103);
+}
