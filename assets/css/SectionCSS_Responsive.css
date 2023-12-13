@@ -126,3 +126,50 @@
     
     }
 }
+
+/* 
+==========================================
+    MOBILE-L USER
+==========================================
+*/
+@media only screen and (max-width: 425px) {
+    .content {
+        padding-top: 3.7em;
+    }
+    
+    /* MAIN LOGO */
+    .mainLogo {
+        top: 1em;
+        left: 1em;
+    }
+
+    .mainLogo .paragraph p {
+        font-size: 0.7em;
+    }
+
+
+    /* MID CONTENT */
+    .Hero {
+        height: 445px;
+    }
+    
+    .newsContent {
+        height: auto;
+    }
+    
+    .main1_content {
+        height: auto;
+    }
+    
+    .marquee {
+        height: 445px;
+    }
+    
+    .marquee p {
+
+    }
+    
+    .marquee p span {
+        font-size: 1.5em;
+    }
+}
