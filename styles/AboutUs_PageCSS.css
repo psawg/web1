@@ -36,35 +36,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.host-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
 
-.host-info {
-    margin-top: 20px;
-}
-
-h2 {
-    color: #e74c3c;
-    margin-bottom: 10px;
-}
-
-p {
-    color: #555;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .host-container {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
-
-@media (max-width: 480px) {
-    .host-container {
-        flex: 1 1 calc(100% - 20px);
-    }
+#imgHost1 img{
+    width: 400px;
+    height: 400px;
 }
