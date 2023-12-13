@@ -19,8 +19,15 @@ window.addEventListener('DOMContentLoaded', function () {
   var newsItems = document.querySelectorAll(".newsItem");
   var isHovered = false; // Biến để theo dõi trạng thái di chuột
 
+
+
+
+
+
+  
+
   newsItems.forEach(function (item) {
-    item.addEventListener("mouseenter", function () {
+    item.addEventListener("mouseover", function () {
       isHovered = true;
       this.style.transform = "scale(1.2)";
       this.style.transition = "transform 1s ease";
@@ -32,7 +39,7 @@ window.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    item.addEventListener("mouseleave", function () {
+    item.addEventListener("mouseout", function () {
       isHovered = false;
       this.style.transform = "scale(1)";
       this.style.transition = "transform 1s ease";
@@ -79,4 +86,18 @@ window.addEventListener('DOMContentLoaded', function () {
     var firstItem = newsList ? newsList.querySelector(".newsItem:first-child") : null;
     return { newsList, firstItem };
   }
+
+
+   // Hàm lấy các sibling của một element
+function getSiblings(element) {
+  var siblings = [];
+  var sibling = element.parentNode.firstChild;
+  while (sibling) {
+    if (sibling.nodeType === 1 && sibling !== element) {
+      siblings.push(sibling);
+    }
+    sibling = sibling.nextSibling;
+  }
+  return siblings;
+}
 });
