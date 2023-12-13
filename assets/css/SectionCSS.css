@@ -153,7 +153,7 @@
     display: block;
     align-items: center;
     height: 650px;
-    transition: transform 1s ease; 
+    transition: transform 2s ease; 
 }
 /* 
 .newsContent {
