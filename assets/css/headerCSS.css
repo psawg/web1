@@ -4,9 +4,8 @@
 UTILITY
 ==========================================
 */
-
+ 
 * {
-    box-sizing: content-box;
     font-family: 'Verdana', Tahoma, sans-serif;
 }
 
@@ -39,6 +38,7 @@ NAVIGATION BAR
 ==========================================
 */
 .NavBar {
+    box-sizing: content-box;
     display: flex;
     justify-content: flex-start;
     align-items: center;
