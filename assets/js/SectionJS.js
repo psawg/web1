@@ -58,7 +58,7 @@ window.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       newsItems.forEach(function (item) {
         item.style.transform = "translateX(0)";
-      });
+      },3000);
 
       newsList.appendChild(firstItem);
       newsItems.forEach(function (item) {
