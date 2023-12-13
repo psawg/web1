@@ -1,0 +1,147 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&display=swap');
+*{
+    font-family: Kanit;
+}
+section {
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#slider {
+    max-width: 100%;
+    overflow: hidden;
+}
+#slider img {
+    width: 1920px;
+    height: 1080px;
+}
+.imgBanner {
+    width: 100%; /* Adjust as needed */
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.dark-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99.8%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity by changing the last value (0 to 1) */
+    z-index: 1;
+}
+
+.title {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.titleContent {
+    font-size: 4em;
+    /* Adjust the font size */
+    color: #000000;
+    /* Text color */
+  
+    /* Gradient background */
+    padding: 10px;
+    display: inline-block;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(54, 54, 54, 0.5);
+    /* Text shadow */
+    width: 1280px;
+}
+
+.title-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    z-index: 2;
+}
+
+/* Centered text styles */
+h1,
+h2,
+h3,
+.titleContent {
+    text-align: center;
+}
+
+
+.content {
+    font-family: Kanit;
+    font-weight: 300;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.content img {
+    max-width: 1280px;
+}
+
+.su-quote {
+    border-left: 4px solid #3498db; /* Màu sắc đường viền trích dẫn */
+    background-color: #f9f9f9; /* Màu nền trích dẫn */
+    padding: 15px; /* Khoảng cách giữa văn bản và đường viền */
+    margin: 20px 0; /* Khoảng cách giữa các trích dẫn */
+    font-style: italic; /* Chữ nghiêng */
+}
+
+.su-quote strong {
+    color: #e74c3c; /* Màu sắc văn bản in đậm */
+}
+
+.su-quote em {
+    font-style: normal; /* Hủy chữ nghiêng của thẻ em trong thẻ trích dẫn */
+}
+
+@media only screen and (max-width: 1920px) {
+    .content {
+        font-family: Kanit;
+        font-weight: 300;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: justify;
+    }
+    
+    .content img {
+        max-width: 1280px;
+    }
+    #slider img {
+        width: 1920px;
+        height: 1080px;
+    }
+}
+
+@media only screen and (max-width: 2560px) {
+    .content {
+        font-family: Kanit;
+        font-weight: 300;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: justify;
+    }
+    
+    .content img {
+        max-width: 1280px;
+    }
+    #slider img {
+        width: 1920px;
+        height: 1080px;
+    }
+}
