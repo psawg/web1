@@ -1,13 +1,13 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener("DOMContentLoaded", function () {
   this.setTimeout(function () {
-    var video = document.getElementById('backgroundVideo');
+    var video = document.getElementById("backgroundVideo");
     var videos = [
-      '/assets/vid/GTA_VI_trailer.mp4',
-      '/assets/vid/TUNIC_trailer.mp4',
-      '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
-      '/assets/vid/God_of_War_trailer.mp4',
-      '/assets/vid/Marvel_Spider_Man_2_trailer.mp4',
-      '/assets/vid/Minecraft_trailer.mp4'
+      "/assets/vid/GTA_VI_trailer.mp4",
+      "/assets/vid/TUNIC_trailer.mp4",
+      "/assets/vid/Marvel_Spider_Man_2_trailer.mp4",
+      "/assets/vid/God_of_War_trailer.mp4",
+      "/assets/vid/Marvel_Spider_Man_2_trailer.mp4",
+      "/assets/vid/Minecraft_trailer.mp4",
       // Thêm tên file video khác vào đây
     ];
     var randomIndex = Math.floor(Math.random() * videos.length);
@@ -18,14 +18,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
   var newsItems = document.querySelectorAll(".newsItem");
   var isHovered = false; // Biến để theo dõi trạng thái di chuột
-
-
-
-
-
-
-  
-
   newsItems.forEach(function (item) {
     item.addEventListener("mouseover", function () {
       isHovered = true;
@@ -54,12 +46,13 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   function animateNewsItems() {
-    var { newsList, firstItem } = getNewsElements();
+    var {newsList, firstItem} = getNewsElements();
     var newsItems = newsList.querySelectorAll(".newsItem");
 
     newsItems.forEach(function (item) {
       item.style.transition = "transform 1s ease";
-      item.style.transform = "translateX(-100%)";
+      item.style.transform = "translateX(calc(-100% - 10px))";
+      
     });
 
     setTimeout(function () {
@@ -68,11 +61,31 @@ window.addEventListener('DOMContentLoaded', function () {
       });
 
       newsList.appendChild(firstItem);
-
       newsItems.forEach(function (item) {
         item.style.transition = "none";
       });
     }, 1000);
+  }
+
+  function getNewsElements() {
+    var newsList = document.querySelector(".newsList");
+    var firstItem = newsList
+      ? newsList.querySelector(".newsItem:first-child")
+      : null;
+    return { newsList, firstItem };
+  }
+
+  // Hàm lấy các sibling của một element
+  function getSiblings(element) {
+    var siblings = [];
+    var sibling = element.parentNode.firstChild;
+    while (sibling) {
+      if (sibling.nodeType === 1 && sibling !== element) {
+        siblings.push(sibling);
+      }
+      sibling = sibling.nextSibling;
+    }
+    return siblings;
   }
 
   setInterval(function () {
@@ -80,24 +93,4 @@ window.addEventListener('DOMContentLoaded', function () {
       animateNewsItems();
     }
   }, 3000);
-
-  function getNewsElements() {
-    var newsList = document.querySelector(".newsList");
-    var firstItem = newsList ? newsList.querySelector(".newsItem:first-child") : null;
-    return { newsList, firstItem };
-  }
-
-
-   // Hàm lấy các sibling của một element
-function getSiblings(element) {
-  var siblings = [];
-  var sibling = element.parentNode.firstChild;
-  while (sibling) {
-    if (sibling.nodeType === 1 && sibling !== element) {
-      siblings.push(sibling);
-    }
-    sibling = sibling.nextSibling;
-  }
-  return siblings;
-}
 });
