@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     newsItems.forEach(function (item) {
       item.style.transition = "transform 1s ease";
-      item.style.transform = "translateX(-105%)";
+      item.style.transform = "translateX(calc(-100% - 10px))";
     });
 
     setTimeout(function () {
