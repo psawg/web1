@@ -14,7 +14,7 @@
 
 /* Tùy chỉnh màu sắc và hình dạng của thumb */
 .scrollbar::-webkit-scrollbar-thumb {
-  background-color: rgb(246, 205, 183);
+  background-color: white;
   border-radius: 5px;
 }
 

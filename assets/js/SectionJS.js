@@ -41,9 +41,10 @@ window.addEventListener("DOMContentLoaded", function () {
         item.addEventListener("mouseover", function () { //Sự kiện di chuột vào.
           if (!isSliding) {
             isHovered = true;
-            this.style.transform = "scale(1.2)";
-            this.style.transition = "transform 1s ease";
-            this.style.zIndex = "2";
+            this.style.transform = "scale(1.1)";
+            this.style.transition = "transform 0.7s ease";
+            this.style.zIndex = "15";
+            // this.style.overflow = "visible";
           }
         });
         item.addEventListener("mouseout", function () {//Sự kiện di chuột ra.
@@ -52,6 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
             this.style.transform = "scale(1)";
             this.style.transition = "transform 1s ease";
             this.style.zIndex = "0";
+            // this.style.overflow = "hidden";
           }
         });
       });

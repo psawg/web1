@@ -85,7 +85,8 @@
 
 /* NEWS MARQUEE */
 .marquee {
-  background-color: rgb(246, 205, 183);
+  background-color: white;
+  border-radius: 24px 0 0 24px;
   color: rgb(0, 0, 0);
   z-index: 1;
   font-family: "Verdana", Tahoma, sans-serif;
@@ -140,11 +141,12 @@
 
 .newsList {
   display: flex;
-  justify-self: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   gap: 10px;
-  height: 705px;
+  height: 750px;
   width: auto;
   left: 10px;
   top: 10px;
@@ -176,7 +178,7 @@
   align-items: center;
   justify-content: flex-start;
   overflow-x: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   padding: 4vw 1vw;
 }
 
@@ -212,16 +214,23 @@ td {
 
 td {
   padding: 2em 4em;
+  background-color: black;
+}
+
+td img {
+  filter: invert(100%);
 }
 
 tr,
 td img {
+  object-fit: fill;
   width: 330px;
   height: auto;
 }
 
 td:hover {
-  background-color: rgb(246, 205, 183);
+  background-color: rgb(255, 139, 75);
+  /* border: 3px solid black; */
   transform: scale(1.1);
   z-index: 2;
 }
