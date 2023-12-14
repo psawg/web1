@@ -191,16 +191,10 @@ img {
     width: 30%;
     height: auto;
 }
-<<<<<<< Updated upstream
-.another-blog-content img{
-    width: 80%;
-    height: auto;
-=======
 .another-blog-content a img{
     top: 0;
     max-width: 100%;
     height: 10rem;
->>>>>>> Stashed changes
     object-fit: cover;
 }
 
