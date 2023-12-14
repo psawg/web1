@@ -1,0 +1,43 @@
+html {
+    width: 100vw;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    width: 100vw;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+}
+
+.trailer {
+    height: auto;
+    width: 100%;
+}
+
+.imgARK {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;                      
+}
+
+.imgARK img {
+    height: auto;
+    width: 100%;
+}
