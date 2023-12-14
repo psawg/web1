@@ -23,8 +23,8 @@ window.addEventListener("DOMContentLoaded", function () {
     var newsItems = newsList.querySelectorAll(".newsItem");
 
     newsItems.forEach(function (item) {
-      item.style.transition = "transform 1s ease";
-      item.style.transform = "translateX(calc(-100% - 2px))";
+      item.style.transition = "transform 0.7s ease-in-out";
+      item.style.transform = "translateX(calc(-100% - 10px))";
       isSliding = true; // Đánh dấu bắt đầu hoạt động trượt.
     });
 
