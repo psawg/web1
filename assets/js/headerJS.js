@@ -30,7 +30,7 @@ window.addEventListener("scroll", function () {
 
     lastScrollTop = window.scrollY;
     // console.log(lastScrollTop);
-    console.log(window.scrollY);
+   // console.log(window.scrollY);
   }, 10); // delay in milliseconds
 });
 

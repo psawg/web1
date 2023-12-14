@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-
+    font-family: Verdana, Tahoma, sans-serif;
 
 }
 .main {
@@ -62,7 +62,7 @@ body {
     height: 20px;
 }
 
-.logoimg{
+.logo img{
     width: 40px;
     height: 40px;
     padding: 5px 5px;

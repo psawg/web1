@@ -33,17 +33,25 @@
   flex-direction: column;
   margin-top: 30px;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 #content1 .about a:hover {
   color: rgb(246, 205, 183);
+  text-decoration: none;
+
 }
 #content1 #privacy a:hover {
+  text-decoration: none;
   color: rgb(246, 205, 183);
 }
 #content2 #contact a:hover {
+  text-decoration: none;
   color: rgb(246, 205, 183);
 }
 #content2 #faq a:hover {
+  text-decoration: none;
   color: rgb(246, 205, 183);
 }
 
