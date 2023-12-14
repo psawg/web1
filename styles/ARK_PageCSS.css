@@ -1,14 +1,10 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: black; */
     background-image: url(/assets/images/img_page_ARK/ARK_1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
     font-family: Verdana, Tahoma, sans-serif;
-
+    margin: 0px;
 }
 .main {
     display: flex;
@@ -19,7 +15,7 @@ body {
 }
 .content{
     justify-content: center;
-    width: 80%;
+    width: 65%;
     background-color:  rgb(255, 255, 255,0.6); 
     padding: 20px;
     border-radius: 5px;
