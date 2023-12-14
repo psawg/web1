@@ -4,33 +4,25 @@ main{
     padding-left: 10px;
     padding-right: 10px;
     height: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 139, 75);
     padding: 5px 10px ;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(255, 153, 0, 0.214);
 }
 /* macro flex */
-.flex{
+.content-wrapper{
+    background-color: rgb(246, 205, 183);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 15px 20px;
 }
+
 /* ảnh banner trên cùng */
 #banner-image img{
     width: 100%;
-}
-/* chữ Minecraft ở đầu văn bản */
-#info-game-container h1{
-    font-size: 4vh;
-    
-}
-
-/* ô video trailer */
-#trailer-holder {
-    max-width: 100%;
-    max-height: auto;
-    display: flex;
-    justify-content: center;
 }
 
 /* trang trí chữ minecraft */
@@ -143,12 +135,41 @@ img {
 #scrollToTopBtn {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1; 
     right: 5px;
     top: 90%;
-    background-color: rgba(255, 145, 0, 0.815);
+    background-color: rgba(0, 0, 0, 0.238);
     border-radius: 5px;
     padding: 1vw 1vw;
     cursor: pointer;
+}
+
+/* another blog contain */
+.another-blog-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.another-blog-content a {
+    display: flex;
+    /* doi huong flex de anh o tren va tieu de o duoi */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(246, 205, 183);
+    width: 30%;
+    height: auto;
+}
+.another-blog-content img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* hieu ung chuyen background cho bai viet khac */
+.another-blog-content a:hover{
+    background-color: #ffffff;
 }
 
