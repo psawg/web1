@@ -19,42 +19,38 @@
         }
     </style>
 </head>
-<body class="bg-orange">
-    
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="text-center">
-                            <img src="/assets/images/icon_logoHome.png" alt="avatar" class="img-fluid mb-4">
-                            <h1 class="h3">Đăng nhập</h1>
-                        </div>
-                        
-                        <form name="login" onsubmit="return validate()" class="mb-3">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="userName" placeholder="Username">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" name="password" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block btn-orange">Tiếp tục</button>
-                        </form>
-                        
-                        <p class="text-center">Hoặc đăng nhập bằng</p>
-                        
-                        <div class="text-center">
-                            <img src="/assets/images/icon_facebook.png" alt="facebook" class="logoimg">
-                            <img src="/assets/images/icon_discord.png" alt="discord" class="logoimg">
-                            <img src="/assets/images/icon_instagram.png" alt="instagram" class="logoimg">
-                        </div>
-                        
-                        <p class="text-center mt-3">Đăng ký tài khoản</p>
-                    </div>
-                    <div class="card-footer text-center">
-                        Copyright © 2023. AllOfGames.
-                    </div>
-                </div>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="avatar">
+                <img src="/assets/images/icon_logoHome.png" alt="avatar">
+                <h2>Đăng nhập</h2>
+            </div>
+        
+            <div class="login">
+                <form name="login" onsubmit="return validate()" style="display: flex;flex-direction: column;gap: 10px;">
+                    <input type="text" size="20" name="userName" placeholder="Username" style="width: 300px;height: 30px;border: 2px solid black;border-radius: 5px;" >
+                    <input type="password" size="20" name="password" placeholder="Password" style="width: 300px;height: 30px;border: 2px solid black;border-radius: 5px;">
+                    <input type="submit" name="Tiếp tục" value="Tiếp tục" style="width: 150px;height: 30px;margin-left: auto;margin-right: auto;border: 2px solid black;border-radius: 10px;color: white;background-color: red;font-weight: bolder;font-size: 17px;">
+                </form>
+            </div>
+            
+            <div>
+                <p>Hoặc đăng nhập bằng</p>
+            </div>
+            
+            <div class="logo">
+                <div class="logoimg"><img src="/assets/images/icon_facebook.png" alt="facebook"></div>
+                <div class="logoimg"><img src="/assets/images/icon_discord.png" alt="discord"></div>
+                <div class="logoimg"><img src="/assets/images/icon_instagram.png" alt="instagram"></div>
+            </div>
+        
+            <div >
+                <p>Đăng ký tài khoản</p>
+            </div>
+        
+            <div style="font-size: small;">
+                Copyright © 2022. AllOfGames.
             </div>
         </div>
     </div>
