@@ -6,6 +6,8 @@ main{
     height: auto;
     background-color: rgb(255, 255, 255);
     padding: 5px 10px ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 153, 0, 0.214);
 }
 /* macro flex */
 .flex{
@@ -30,11 +32,7 @@ main{
     display: flex;
     justify-content: center;
 }
-/* css video */
-#trailer-holder video{
-    width: 500px;
-    height: auto;
-}
+
 /* trang trí chữ minecraft */
 #paragraph h1{
     color: brown;
@@ -143,14 +141,14 @@ img {
 
 /* nut cuon len dau trang */
 #scrollToTopBtn {
+    display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #9e5353;
-    color: #dc0000;
-    border: none;
+    z-index: 1;
+    right: 5px;
+    top: 90%;
+    background-color: rgba(255, 145, 0, 0.815);
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 1vw 1vw;
     cursor: pointer;
 }
 
