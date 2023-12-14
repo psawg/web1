@@ -25,19 +25,11 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-let scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-//cuộn xuống 200px tính từ đầu trang thì sẽ hiện button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-}
 //nhấp vào button sẽ cuộn lên trang đầu
 function scrollToTop() {
 window.scrollTo({ top: 0, behavior: "smooth" });
 };
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
