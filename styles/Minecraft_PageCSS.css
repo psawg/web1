@@ -1,40 +1,30 @@
-*{
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    /* box-sizing: border-box; */
-}
 main{
+    box-sizing: border-box;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
     height: auto;
-    background-color: rgb(246, 205, 183);
+    background-color: rgb(255, 139, 75);
+    padding: 5px 10px ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* macro flex */
-.flex{
+.content-wrapper{
+    background-color: rgb(246, 205, 183);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 15px 20px;
 }
+
 /* ảnh banner trên cùng */
 #banner-image img{
     width: 100%;
 }
-/* chữ Minecraft ở đầu văn bản */
-#info-game-container h1{
-    font-size: 4vh;
-}
 
-/* ô video trailer */
-#trailer-holder {
-    max-width: 80%;
-    max-height: auto;
-    display: flex;
-}
-/* css video */
-#trailer-holder video{
-    width: 100%;
-    height: auto;
-}
 /* trang trí chữ minecraft */
 #paragraph h1{
     color: brown;
@@ -71,7 +61,7 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -88,12 +78,12 @@ img {
 /*Tô đen nút chuyển ảnh khi đưa chuột vào*/
 .prev:hover,
 .next:hover {
-    background-color: rgb(255, 139, 75);
+    background-color: rgb(0, 0, 0);
 }
 
 /* Number text */
 .numbertext {
-    color: #000000;
+    color: #ffffff;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -103,9 +93,9 @@ img {
 /* Container image text */
 .caption-container {
     text-align: center;
-    background-color: rgb(255, 139, 75);
+    background-color: rgb(0, 0, 0);
     padding: 2px 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .row:after {
@@ -140,3 +130,46 @@ img {
     /* chinh mau chu */
     color: rgb(103, 103, 103);
 }
+
+/* nut cuon len dau trang */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    right: 5px;
+    top: 90%;
+    background-color: rgba(0, 0, 0, 0.238);
+    border-radius: 5px;
+    padding: 1vw 1vw;
+    cursor: pointer;
+}
+
+/* another blog contain */
+.another-blog-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.another-blog-content a {
+    display: flex;
+    /* doi huong flex de anh o tren va tieu de o duoi */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(246, 205, 183);
+    width: 30%;
+    height: auto;
+}
+.another-blog-content img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* hieu ung chuyen background cho bai viet khac */
+.another-blog-content a:hover{
+    background-color: #ffffff;
+}
+
