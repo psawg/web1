@@ -1,17 +1,40 @@
 body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    background-image: url(/assets/images/img_page_ARK/ARK_1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu đen với độ trong suốt 0.7 */
+}
+.content{
+    justify-content: center;
+    width: 80%;
+    background-color:  rgb(255, 255, 255,0.6); 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 17px 2px #bcb9b9;
+    display: block;
 }
 
 .banner {
     display: flex;
     align-items: center;
+    justify-items: center;
     position: relative;
     background-repeat: no-repeat;
-    object-fit: fill;
-    width: 100vw;
+    object-fit: 100%;
+    width: auto;
 }
 
 .banner h1 {
@@ -20,10 +43,15 @@ body {
     left: 50%;
     margin: 0;
 }
-
+.banner img{
+    width: 80%;
+    height: auto;
+    display: flex;
+    
+}
 .trailer video {
-    height: 720px;
-    width: 100vw;
+    height: auto;
+    width: 100%;
 }
 
 .imgARK {
