@@ -30,24 +30,24 @@ window.addEventListener("DOMContentLoaded", function () {
       item.style.transition = "transform 1s ease";
       item.style.transform = "translateX(calc(-100% - 2px))";
       
-      item.addEventListener("mouseover", function () {
-        isHovered = true;
-        this.style.transform = "scale(1.03)";
-        this.style.transition = "transform 1s ease";
-        this.style.zIndex = "2";
-      });
-
-      item.addEventListener("mouseout", function () {
-        isHovered = false;
-        this.style.transform = "scale(1)";
-        this.style.transition = "transform 1s ease";
-        this.style.zIndex = "0";
-      });
+      
     });
 
     setTimeout(function () {
       newsItems.forEach(function (item) {
         item.style.transform = "translateX(0)";
+        item.addEventListener("mouseover", function () {
+          isHovered = true;
+          this.style.transform = "scale(1.09)";
+          this.style.transition = "transform 1s ease";
+          this.style.zIndex = "2";
+        });
+        item.addEventListener("mouseout", function () {
+          isHovered = false;
+          this.style.transform = "scale(1)";
+          this.style.transition = "transform 1s ease";
+          this.style.zIndex = "0";
+        });
       }, 3000);
 
       newsList.appendChild(firstItem);

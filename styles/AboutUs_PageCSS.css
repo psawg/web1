@@ -1,5 +1,6 @@
 
 #aboutContent{
+    box-sizing: content-box;
     /* padding-top: 3em; */
     width: 100%;
     height: 100%;
@@ -80,12 +81,102 @@
 
 
 
-#Host2{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(246, 205, 183);
-}
 
 #AboutContact{
-    
+    display: flex;
+    position: relative;
+    background-color:rgb(246, 205, 183);
+    width: 100%;
+    height: 600px;
 }
+
+#AboutContact #contactInfor{
+    position: relative;
+    width: 1700px;
+    height: fit-content;
+    top: 230px;
+    left: 110px;
+}
+
+
+#AboutContact #contactInfor #CT{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 85px;
+    width: 550px;
+    margin: 0%;
+}
+#AboutContact #contactInfor #para{
+    font-size: 20px;
+    margin: 0%;
+    width: 600px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+#AboutContact #contactLink{
+    position: relative;
+    width: 100%;
+    height:fit-content;
+    top: 230px;
+    /* left: 180px; */
+}
+
+#AboutContact #contactLink #fistLink{
+    position: relative;
+    top: 14px;
+}
+#AboutContact #contactLink #fistLink #tagLink{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0%;
+    width: 400px ;
+}
+
+#AboutContact #contactLink #fistLink #LinkContact{
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0) ;
+    border-radius: 5px;
+    color: rgb(255, 139, 75);
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    font-size: 22px;
+    width: 400px ;
+    height: 30px;
+    justify-content: center;
+}
+
+
+#AboutContact #contactLink #secondLink{
+    position: relative;
+    top: 40px;
+}
+#AboutContact #contactLink #secondLink #tagLink1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0%;
+    width: 600px ;
+}
+
+#AboutContact #contactLink #secondLink #LinkContact1{
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0) ;
+    border-radius: 5px;
+    color: rgb(255, 139, 75);
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    font-size: 22px;
+    width: 400px ;
+    height: 30px;
+    justify-content: center;
+}
+
+
+
