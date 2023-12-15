@@ -1,40 +1,35 @@
-*{
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    /* box-sizing: border-box; */
-}
 main{
+    box-sizing: border-box;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
     height: auto;
-    background-color: rgb(246, 205, 183);
+    background-color: black;
+    padding: 5px 10px ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* macro flex */
-.flex{
+.content-wrapper{
+    background-color: rgb(246, 205, 183);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 15px 20px;
+}
+
+#info-game-container{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 /* ảnh banner trên cùng */
 #banner-image img{
     width: 100%;
 }
-/* chữ Minecraft ở đầu văn bản */
-#info-game-container h1{
-    font-size: 4vh;
-}
 
-/* ô video trailer */
-#trailer-holder {
-    max-width: 80%;
-    max-height: auto;
-    display: flex;
-}
-/* css video */
-#trailer-holder video{
-    width: 100%;
-    height: auto;
-}
 /* trang trí chữ minecraft */
 #paragraph h1{
     color: brown;
@@ -57,6 +52,10 @@ img {
     display: none;
 }
 
+.mySlides:first-child {
+    display: block;
+  }
+
 /*add ngon tro*/
 .cursor {
     cursor: pointer;
@@ -71,7 +70,7 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -88,12 +87,12 @@ img {
 /*Tô đen nút chuyển ảnh khi đưa chuột vào*/
 .prev:hover,
 .next:hover {
-    background-color: rgb(255, 139, 75);
+    background-color: rgb(0, 0, 0);
 }
 
 /* Number text */
 .numbertext {
-    color: #000000;
+    color: #ffffff;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -103,9 +102,9 @@ img {
 /* Container image text */
 .caption-container {
     text-align: center;
-    background-color: rgb(255, 139, 75);
+    background-color: rgb(0, 0, 0);
     padding: 2px 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .row:after {
@@ -140,3 +139,104 @@ img {
     /* chinh mau chu */
     color: rgb(103, 103, 103);
 }
+/* lam chu ky wavy */
+#sign a{
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+}
+#sign a:hover{
+    color: brown;
+    animation: wavyText 0.6s ease-in-out infinite;
+}
+@keyframes wavyText {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* nut cuon len dau trang */
+#scrollToTopBtn {
+    position: fixed;
+    z-index: 1; 
+    right: 10px;
+    top: 90%;
+    background-color: rgba(255, 138, 75, 0.83);
+    border-radius: 5px;
+    padding: 1%;
+    cursor: pointer;
+}
+
+/* another blog contain */
+.another-blog-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.another-blog-content a {
+    display: flex;
+    /* doi huong flex de anh o tren va tieu de o duoi */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(246, 205, 183);
+    width: 30%;
+    height: auto;
+}
+.another-blog-content a img{
+    top: 0;
+    max-width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+/* hieu ung chuyen background cho bai viet khac */
+.another-blog-content h6:hover{
+    color: brown;
+}
+
+/* rating */
+#star-rating{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+.star-wrapper {
+    direction: rtl;
+}
+.star-wrapper a {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 4px;
+}
+.star-wrapper a:hover {
+    color: brown;
+    transform: scale(1.3);
+}
+.s1:hover ~ a {
+    color: brown;
+}
+.s2:hover ~ a {
+    color: brown;
+}
+.s3:hover ~ a {
+    color: brown;
+}
+.s4:hover ~ a {
+    color: brown;
+}
+.s5:hover ~ a {
+    color: brown;
+}
+

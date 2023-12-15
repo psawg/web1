@@ -1,0 +1,63 @@
+body {
+    background-image: url(/assets/images/img_page_ARK/ARK_1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu đen với độ trong suốt 0.7 */
+}
+.content{
+    justify-content: center;
+    width: 65%;
+    background-color:  rgb(255, 255, 255,0.6); 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 17px 2px #bcb9b9;
+    display: block;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    object-fit: 100%;
+    width: auto;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+}
+.banner img{
+    width: 80%;
+    height: auto;
+    display: flex;
+    
+}
+.trailer video {
+    height: auto;
+    width: 100%;
+}
+
+.imgARK {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;                      
+}
+
+.imgARK img {
+    height: auto;
+    width: 100%;
+}

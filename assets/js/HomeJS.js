@@ -16,4 +16,7 @@ loadHTMLComponent('/components/Section.html', 'section');
 loadHTMLComponent('/components/GTA_VI_Page_Section.html', 'GTAsection');
 loadHTMLComponent('/components/RedDead_Page_Section.html', 'RedDeadsection');
 loadHTMLComponent('/components/AboutUs_Page_Section.html', 'AboutUssection');
+loadHTMLComponent('/components/Minecraft_Page_Section.html', 'Minecraftsection');
+loadHTMLComponent('/components/Cyberpunk_Page_Section.html', 'Cyberpunksection');
 
+loadHTMLComponent('/components/ARK_Page_Section.html', 'ARKsection');
