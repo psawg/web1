@@ -8,7 +8,6 @@ function closeNav() {
   document.getElementById("idSideNav").style.width = "0px";
 }
 
-
 //Behavior NavBar Scroll
 let lastScrollTop = 0;
 let timeout;
@@ -21,22 +20,37 @@ window.addEventListener("scroll", function () {
     const navBar = document.querySelector(".NavBar");
 
     if (window.scrollY > lastScrollTop) {
-        navBar.classList.add("nav-hide");
-        navBar.classList.remove("nav-show");
+      navBar.classList.add("nav-hide");
+      navBar.classList.remove("nav-show");
     } else {
-        navBar.classList.add("nav-show");
-        navBar.classList.remove("nav-hide");
+      navBar.classList.add("nav-show");
+      navBar.classList.remove("nav-hide");
     }
 
     lastScrollTop = window.scrollY;
     // console.log(lastScrollTop);
-   // console.log(window.scrollY);
+    // console.log(window.scrollY);
   }, 10); // delay in milliseconds
 });
 
 
 
 
+
+
+function test1() {
+  // Kiểm tra đường dẫn hiện tại của trang
+  if (window.location.pathname.includes("All_Of_Games.html")) {
+    // Nếu đang ở trang "All_Of_Games.html", thực hiện scrollToNews()
+    scrollToNews();
+  } else {
+    // Nếu không phải trang "All_Of_Games.html", chuyển hướng đến trang đó và sau đó thực hiện scrollToNews()
+    window.location.href = "/All_Of_Games.html";
+    setTimeout(function () {
+      scrollToNews();
+    }, 2000);
+  }
+}
 //Cuộn tới phần news khi nhấn "News" trên NavBar
 function scrollToNews() {
   // Lấy phần tử "midContent" bằng id
@@ -88,6 +102,24 @@ function scrollToNews() {
 }
 
 
+
+
+
+
+
+function test2() {
+  // Kiểm tra đường dẫn hiện tại của trang
+  if (window.location.pathname.includes("All_Of_Games.html")) {
+    // Nếu đang ở trang "All_Of_Games.html", thực hiện scrollToNews()
+    scrollToGames();
+  } else {
+    // Nếu không phải trang "All_Of_Games.html", chuyển hướng đến trang đó và sau đó thực hiện scrollToNews()
+    window.location.href = "/All_Of_Games.html";
+    setTimeout(function () {
+      scrollToNews();
+    }, 2000);
+  }
+}
 //Cuộn tới phần game table khi nhấn "Game" trên NavBar
 function scrollToGames() {
   var gamesSection = document.getElementById("botContent");
