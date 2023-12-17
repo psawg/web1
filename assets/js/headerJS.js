@@ -17,10 +17,10 @@ window.addEventListener("scroll", function () {
   clearTimeout(timeout);
 
   timeout = setTimeout(() => {
-    // const threshold = 50;
+    const threshold = 300;
     const navBar = document.querySelector(".NavBar");
 
-    if (window.scrollY > lastScrollTop) {
+    if (window.scrollY > lastScrollTop + threshold) {
         navBar.classList.add("nav-hide");
         navBar.classList.remove("nav-show");
     } else {
