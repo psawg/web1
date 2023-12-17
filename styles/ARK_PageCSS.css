@@ -9,6 +9,85 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* UTILITY */
+* {
+    box-sizing: content-box;
+}
+  
+.content {
+    padding-top: 6em;
+    overflow: hidden;
+    width: 100%;
+}
+  
+/* TOP CONTAINER */
+.topContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+  
+#backgroundVideo {
+    position: relative;
+    left: 10%;
+    width: 100%;
+    opacity: 1;
+}
+  
+.overlay {
+    box-sizing: border-box;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: start;
+    justify-content: flex-start;
+    z-index: 1;
+    background: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 1) 10%,
+          rgba(0, 0, 0, 0) 100%
+    ); /* Màu nền của lớp chữ ghi đè */
+}
+
+.mainLogo {
+    position: relative;
+    top: 4em;
+    left: 4em;
+    width: max-content;
+}
+  
+.mainLogo img {
+    transition: 0.1s ease;
+    width: 40vw;
+    max-width: 500px;
+}
+
+.paragraph {
+    width: auto;
+}
+
+.paragraph p {
+    transition: 0.1s ease;
+    width: 55vw;
+    max-width: 650px;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+  
+/* MID CONTAINER */
+.midContent {
+    height: auto;
+    background-color: black;
+}
+
 /* macro flex */
 .content-wrapper {
     background-color: rgb(246, 205, 183);
