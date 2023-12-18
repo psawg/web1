@@ -1,12 +1,17 @@
 main {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
     height: auto;
     background-color: black;
-    padding: 5px 10px ;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+}
+
+p {
+    color: white;
 }
 
 /* UTILITY */
@@ -57,15 +62,16 @@ main {
 
 .mainLogo {
     position: relative;
-    top: 4em;
-    left: 4em;
+    top: 2em;                   /* Thay đổi vị trí phía trên */
+    left: 4em;                  /* Thay đổi vị trí bên trái */
     width: max-content;
 }
   
 .mainLogo img {
     transition: 0.1s ease;
-    width: 40vw;
+    width: 50vw;                /* Thay đổi kích cỡ ảnh */
     max-width: 500px;
+    
 }
 
 .paragraph {
@@ -81,17 +87,24 @@ main {
     margin: 0;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+  
+/* MID CONTAINER */
+.midContent {
+    height: auto;
+    background-color: black;
+}
 
 /* macro flex */
 .content-wrapper {
-    background-color: rgb(246, 205, 183);
+    /* background-color: rgb(246, 205, 183); */
+    background: linear-gradient(to right, rgb(255, 139, 75) 0%, black 5%, black 95%, rgb(255, 139, 75) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    width: 80%;
-    padding: 15px 20px;
+    /* margin: 0 auto; */
+    /* width: 80%; */
+    padding: 15px 10vw;
 }
 
 #info-game-container {
@@ -250,9 +263,12 @@ img {
 }
 
 /* another blog contain */
+.another-blog {
+    /* height: 900px; */
+}
+
 .another-blog-content {
     display: flex;
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -262,7 +278,8 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgb(246, 205, 183);
+    background-color: black;
+    color: white;
     width: 30%;
     height: auto;
 }
@@ -275,8 +292,8 @@ img {
 .another-blog-content a img {
     top: 0;
     max-width: 100%;
-    height: 10rem;
-    object-fit: cover;
+    height: 470px;
+    object-fit: contain;
 }
 
 /* hieu ung chuyen background cho bai viet khac */
