@@ -64,7 +64,7 @@ window.addEventListener("DOMContentLoaded", function () {
       animateNewsItems();
     }
   }, 3000);
-  x;
+  
   function getNewsElements() {//Lấy element đầu tiên và kiểm tra tồn tại.
     var newsList = document.querySelector(".newsList");
     var firstItem = newsList
