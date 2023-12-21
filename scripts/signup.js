@@ -1,62 +1,9 @@
-// // validation form register and register user local storage
-// function validateRegistration() {
-// const inputUsernameRegister = document.querySelector(".input-signup-username");
-// const inputPasswordRegister = document.querySelector(".input-signup-password");
-// const btnRegister = document.querySelector(".signup__signInButton");
-
-// // validation form register and register user local storage
-
-// function check (e) {
-//     regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
-//     if(regex.test(e)){
-      
-//     } else {
-//       alert("Khong phai la email")
-//       inputUsernameRegister.value = ""
-//     }
-
-// } 
-
-// function checkPassWord (e , min) {
-//   regex = /[1-9]/
-//   if (!regex.test(e) || e.length < min) {
-//     alert("vui long nhap du 6 ki tu va ki tu phai la so")
-//   } 
-// }
-
-// inputUsernameRegister.addEventListener('blur',() => {
-//   check(inputUsernameRegister.value)  
-// })
-
-// inputPasswordRegister.addEventListener('blur' , ()=> {
-//   checkPassWord(inputPasswordRegister.value , 6)
-// })
-
-// btnRegister.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   if (
-//     inputUsernameRegister.value === "" ||
-//     inputPasswordRegister.value === ""
-//   ) {
-//     alert("vui lòng không để trống");
-//   } else {
-
-//     // array user
-//     const user = {
-//       username: inputUsernameRegister.value,
-//       password: inputPasswordRegister.value,
-//     };
-//     let json = JSON.stringify(user);
-//     localStorage.setItem(inputUsernameRegister.value, json);
-//     alert("Đăng Ký Thành Công");
-//     window.location.href = "login.html";
-//   }
-// });
-// }
+// Lay gia tri cua o nhap ten dang ky va mat khau
 function validateRegistration() {
   const inputUsernameRegister = document.querySelector(".input-signup-username");
   const inputPasswordRegister = document.querySelector(".input-signup-password");
 
+  // Ham kiem dinh dang email
   function check(e) {
       const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
       if (!regex.test(e)) {
@@ -67,6 +14,7 @@ function validateRegistration() {
       return true;
   }
 
+  // Ham kiem tra mat khau
   function checkPassword(e, min) {
       const regex = /[1-9]/;
       if (!regex.test(e) || e.length < min) {
@@ -76,8 +24,10 @@ function validateRegistration() {
       return true;
   }
 
+  // Lay gia tri cua o xac nhan mat khau
   const confirmPassword = document.getElementsByName("confirmPassword")[0].value;
 
+  // Kiem tra cac o co trong hay khong 
   if (
       inputUsernameRegister.value === "" ||
       inputPasswordRegister.value === "" ||
@@ -87,15 +37,18 @@ function validateRegistration() {
       return false;
   }
 
+  // Kiem tra dinh dang cua email va mat khau
   if (!check(inputUsernameRegister.value) || !checkPassword(inputPasswordRegister.value, 6)) {
       return false;
   }
 
+  // Kiem tra mat khau va xac nhan mat khau co khop voi nhau hay khong 
   if (inputPasswordRegister.value !== confirmPassword) {
       alert("Mật khẩu và xác nhận mật khẩu không khớp");
       return false;
   }
 
+  // Luu thong tin nguoi dung vao localStorage va chuyen huong den trang dang nhap
   const user = {
       username: inputUsernameRegister.value,
       password: inputPasswordRegister.value,
@@ -104,6 +57,5 @@ function validateRegistration() {
   localStorage.setItem(inputUsernameRegister.value, json);
   alert("Đăng Ký Thành Công");
   window.location.href = "login.html";
-
-  return false; // prevent form submission
+  return false; 
 }
