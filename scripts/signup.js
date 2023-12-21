@@ -18,7 +18,7 @@ function validateRegistration() {
   function checkPassword(e, min) {
       const regex = /[1-9]/;
       if (!regex.test(e) || e.length < min) {
-          alert("Vui lòng nhập ít nhất 6 kí tự và kí tự phải là số");
+          alert("Vui lòng nhập ít nhất 6 kí tự");
           return false;
       }
       return true;

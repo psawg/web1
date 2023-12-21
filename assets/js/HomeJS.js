@@ -19,5 +19,7 @@ loadHTMLComponent('/components/AboutUs_Page_Section.html', 'AboutUssection');
 loadHTMLComponent('/components/Minecraft_Page_Section.html', 'Minecraftsection');
 loadHTMLComponent('/components/Cyberpunk_Page_Section.html', 'Cyberpunksection');
 loadHTMLComponent('/components/ARK_Page_Section.html', 'ARKsection');
+loadHTMLComponent('/components/ResidentE8_Page_Section.html', 'ResidentE8section');
+loadHTMLComponent('/components/EldenRing_Page_Section.html', 'EldenRingsection');
 loadHTMLComponent('/components/ContactUs_Page_Section.html', 'ContactUsSection');
 
